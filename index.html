@@ -33,11 +33,14 @@
             Your browser does not support the video tag.
          </video>
 
-        <!-- Static Image for mobile -->
-    <img class="mobile-image" src="" alt="Static image for mobile">
 
          <div class="text-overlay">
             <h1>Welcome to <br/> ISKCON Bangalore</h1>
+            <p>A sacred space to grow with grace,
+                Where love and wisdom interlace. <br/>
+                Young or old, all journeys start,
+                Come explore, and be a part.
+                </p>
          </div>
 
          <!-- Style -->
@@ -60,17 +63,12 @@
                 z-index: -1; /* Ensure it's behind the text */
             }
 
-            /* Static image for mobile devices */
-            .mobile-image {
-                display: none; /* Hidden by default */
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-            }
+            
             /* Text overlay style */
             .text-overlay {
                 position: absolute;
                 top: 50%;
+                width: 100%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
@@ -78,6 +76,7 @@
                 z-index: 1;
             }
             .text-overlay h1 {
+                font-family: 'Lora', serif;
                 font-size: 2.6em;
                 font-weight: bold;
                 margin-bottom: 20px;
@@ -85,15 +84,14 @@
             
             .text-overlay p {
                 font-size: 1.5em;
+                font-family: 'Roboto',serif;
             }
             /* Responsive design */
             @media only screen and (max-width: 768px) {
-                .background-video {
-                    display: none; /* Hide the video on mobile */
-                }
-
-                .mobile-image {
-                    display: block; /* Show the image on mobile */
+                .text-overlay {
+                    align-items: center;
+                    width: 90%;
+                    margin-right: 30px;
                 }
 
                 .text-overlay h1 {
