@@ -220,14 +220,6 @@
             content: "";
             z-index: 2;
         }
-        .logos:before {
-            left: 0;
-            background: linear-gradient(to left, rgba(255,255,255,0),#ebf0f2);
-        }
-        .logos:after {
-            right: 0;
-            background: linear-gradient(to right, rgba(255,255,255,0),#ebf0f2);
-        }
         .logos:hover .logos-slide {
             animation-play-state: paused;
         }
@@ -236,9 +228,14 @@
             animation: 35s slide infinite linear;
         }
         .logos-slide img {
-            height: 50px;
+            height: 20px;
             margin: 0 40px;
         }
+        @media (max-width:600px) {
+            .logos-slide img {
+                height: 15px;
+                margin: 0 40px;
+            }
      </style>
     <!-- Style for logo -->
     </div>
