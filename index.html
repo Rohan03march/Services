@@ -126,6 +126,8 @@
 
     <!-- Main -->
      <h1 style="color: black;text-align:center;font-family:'Lora', serif;" class="heading">Discover ISKCON Bangalore's programs</h1>
+     
+     <!-- Rounded box-->
      <div class="rounded-box">
         <p>
            <q>Each thoughtfully crafted to offer a holistic approach to cultivating your growth, like a young sapling evolving into a strong, deeply rooted tree that bears fruit and stands resilient through life’s storms. 
@@ -166,7 +168,82 @@
         </style>
         <!-- /Style for Rounded-box -->
     </div>
-    
+     <!-- /Rounded Box-->
+
+    <!-- Featured In -->
+    <h1 style="text-align: center;font-family: 'Lora', serif;">Featured In</h1>
+    <div class="logo">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
+                <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
+                <img src="./assets/logos/thehindu-logo.svg">
+                <img src="./assets/logos/Hindustan_Times_logo.svg.png">
+                <img src="./assets/logos/CNBC_Logo_0.svg">
+                <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
+                <img src="./assets/logos/idXa34qurz_1732783119437.png">
+                <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
+            </div>
+            <div class="logos-slide">
+                <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
+                <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
+                <img src="./assets/logos/thehindu-logo.svg">
+                <img src="./assets/logos/Hindustan_Times_logo.svg.png">
+                <img src="./assets/logos/CNBC_Logo_0.svg">
+                <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
+                <img src="./assets/logos/idXa34qurz_1732783119437.png">
+                <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
+            </div>
+        </div>
+        <!-- Style for logo -->
+     <style>
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .logos {
+            overflow: hidden;
+            padding: 20px 0;
+            background: white;
+            white-space: nowrap;
+            position: relative;
+        }
+        .logos::before,.logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+        .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255,255,255,0),#ebf0f2);
+        }
+        .logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255,255,255,0),#ebf0f2);
+        }
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+        .logos-slide {
+            display: inline-block;
+            animation: 35s slide infinite linear;
+        }
+        .logos-slide img {
+            height: 50px;
+            margin: 0 40px;
+        }
+     </style>
+    <!-- Style for logo -->
+    </div>
+    <!-- /Featured In -->
+
 
     <!-- /Main -->
 
