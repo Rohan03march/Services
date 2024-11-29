@@ -27,105 +27,135 @@
 </head>
 <body>
 
-    <!-- Header -->
-     <div class="video-container">
+   <!-- Header -->
+<div class="video-container">
 
-        <!-- video background for desktop -->
-         <video class="background-video" autoplay loop muted>
-            <source src="./assets/video/growingtree.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-         </video>
+    <!-- video background for desktop -->
+    <video class="background-video" autoplay loop muted>
+        <source src="./assets/video/growingtree.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-        <!-- Static Image for mobile -->
+    <!-- Static Image for mobile -->
     <img class="mobile-image" src="./assets/Images/gettyimages-1204031983-612x612.jpg" alt="Static image for mobile"> 
 
-         <div class="text-overlay">
-            <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
-            <p>A sacred space to grow with grace,
-                Where love and wisdom interlace. <br/>
-                Young or old, all journeys start,
-                Come explore, and be a part.
-                </p>
-         </div>
+    <!-- Logo Image positioned at the top-left -->
+    <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo">
+    
 
-         <!-- Style -->
-          <style>
-            .video-container {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-            }
+    <!-- Logo Image positioned at the top-right -->
+    <img class="logo-image-right" src="./assets/Images/sp logo.png" alt="Logo">
 
-            /* Video background for desktop */
+    <div class="text-overlay">
+        <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
+        <p>A sacred space to grow with grace,
+            Where love and wisdom interlace. <br/>
+            Young or old, all journeys start,
+            Come explore, and be a part.
+        </p>
+    </div>
+
+    <!-- Style -->
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Video background for desktop */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%); /* Dim the video for readability */
+            z-index: -1; /* Ensure it's behind the text */
+        }
+
+        /* Static image for mobile devices */
+        .mobile-image {
+            display: none; /* Hidden by default */
+            width: 100%;
+            height: 100vh;
+            filter: brightness(40%);
+            object-fit: cover;
+        }
+
+        /* Logo positioned at the top-left */
+        .logo-image-left {
+            position: absolute;
+            top: 30px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            width: 150px; /* Adjust the logo size */
+            z-index: 1; /* Ensure it's above the video */
+        }
+
+        /* Logo positioned at the top-right */
+        .logo-image-right {
+            position: absolute;
+            top: 30px; /* Adjust as needed */
+            right: 20px; /* Align to the right */
+            width: 70px; /* Adjust the logo size */
+            z-index: 1; /* Ensure it's above the video */
+        }
+
+        /* Text overlay style */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .text-overlay h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.6em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text-overlay p {
+            font-size: 1.5em;
+            font-family: 'Roboto', serif;
+        }
+
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
             .background-video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                filter: brightness(50%); /* Dim the video for readability */
-                z-index: -1; /* Ensure it's behind the text */
+                display: none; /* Hide the video on mobile */
             }
 
-            /* Static image for mobile devices */
-             .mobile-image {
-                display: none; /* Hidden by default */
-                width: 100%;
-                height: 100vh;
-                filter: brightness(40%);
-                object-fit: cover;
+            .mobile-image {
+                display: block; /* Show the image on mobile */
             }
-            /* Text overlay style */
+
             .text-overlay {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                color: white;
-                z-index: 1;
+                align-items: center;
+                width: 90%;
+                margin-right: 30px;
             }
+
             .text-overlay h1 {
-                font-family: 'Lora', serif;
-                font-size: 2.6em;
-                font-weight: bold;
-                margin-bottom: 20px;
+                font-size: 2em;
             }
-            
+
             .text-overlay p {
-                font-size: 1.5em;
-                font-family: 'Roboto',serif;
+                font-size: 1.2em;
             }
-            /* Responsive design */
-            @media only screen and (max-width: 768px) {
-                .background-video {
-                    display: none; /* Hide the video on mobile */
-                }
+        }
+    </style>
+    <!-- /Style -->
+</div>
+<!-- /Header -->
 
-                .mobile-image {
-                    display: block; /* Show the image on mobile */
-                }
 
-                .text-overlay {
-                    align-items: center;
-                    width: 90%;
-                    margin-right: 30px;
-                }
-
-                .text-overlay h1 {
-                    font-size: 2em;
-                }
-
-                .text-overlay p {
-                    font-size: 1.2em;
-                }
-            }
-          </style>
-         <!-- /Style -->
-     </div>
-    <!-- /Header -->
 
     <!-- Main -->
      <h1 style="color: black;text-align:center;font-family:'Lora', serif;" class="heading">Discover ISKCON Bangalore's programs</h1>
