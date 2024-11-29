@@ -18,7 +18,7 @@
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #ebf0f2;
+            background-color: white;
         }
      </style>
     <!-- /Style for the body -->
@@ -841,6 +841,91 @@
                 </div>
 
     <!-- /Image Grid -->
+ <br/>
+ 
+    <!-- Science -->
+    <h1 style="font-family: 'Lora', serif;text-align:center">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+    <div class="science">
+        <div class="science-container">
+          <div class="text">
+            <p>
+                <li>Reduced stress and anxiety</li>
+                <li>Enhanced cognitive abilities</li>
+                <li>Improved emotional well-being</li>
+            </p>
+          </div>
+          <div class="image">
+            <img src="./assets/Images/break_old_patterns.svg" alt="Image Description">
+          </div>
+        </div>
+        <style>
+          .science {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+          }
+      
+          .science-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+          }
+      
+          .text {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px;
+          }
+      
+          .image {
+            flex: 1;
+            max-width: 500px;
+          }
+      
+          .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+          }
+      
+          h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+          }
+      
+        li {
+            font-size: 30px;
+            color: #555;
+          }
+      
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            .science-container {
+              flex-direction: column;
+              text-align: center;
+            }
+
+            li {
+                font-size: 18px;
+            }
+      
+            .text {
+              max-width: 100%;
+              margin-bottom: 20px;
+            }
+      
+            .image {
+              max-width: 100%;
+              order: -1; /* Make the image appear first (on top of text) */
+            }
+          }
+      
+        </style>
+      </div>
+    <!-- /Science -->
 
     <!-- /Main -->
 
