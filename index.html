@@ -63,11 +63,48 @@
     
         <div class="text-overlay">
             <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
-            <p>A sacred space to grow with grace,
-                Where love and wisdom interlace. <br/>
-                Young or old, all journeys start,
-                Come explore, and be a part.
-            </p>
+            <div id="typedtext"></div>
+            <script>
+                // set up text to print, each item in array is new line
+var aText = new Array(
+    "A scared space to flourish", 
+    "Where love and grace nourish",
+    "For all ages to cherish"
+    );
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+     
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+     
+    function typewriter()
+    {
+     sContents =  ' ';
+     iRow = Math.max(0, iIndex-iScrollAt);
+     var destination = document.getElementById("typedtext");
+     
+     while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+     }
+     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+     if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+       iArrLength = aText[iIndex].length;
+       setTimeout("typewriter()", 500);
+      }
+     } else {
+      setTimeout("typewriter()", iSpeed);
+     }
+    }
+    
+    
+    typewriter();
+            </script>
         </div>
     
         <!-- Style -->
@@ -136,7 +173,7 @@
                 margin-bottom: 20px;
             }
     
-            .text-overlay p {
+            #typedtext {
                 font-size: 1.5em;
                 font-family: 'Roboto', serif;
             }
@@ -161,7 +198,7 @@
                     font-size: 2em;
                 }
     
-                .text-overlay p {
+                #typedtext {
                     font-size: 1.2em;
                 }
             }
@@ -219,7 +256,7 @@
 
      <!-- Featured In -->
      <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Featured In</h1>
-     <div class="logo">
+     <div class="logo"> 
          <div class="logos">
              <div class="logos-slide">
                  <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
@@ -243,48 +280,51 @@
              </div>
          </div>
          <!-- Style for logo -->
-      <style>
-         @keyframes slide {
-             from {
-                 transform: translateX(0);
-             }
-             to {
-                 transform: translateX(-100%);
-             }
-         }
-         .logos {
-             overflow: hidden;
-             padding: 20px 0;
-             background: white;
-             white-space: nowrap;
-             position: relative;
-         }
-         .logos::before,.logos:after {
-             position: absolute;
-             top: 0;
-             width: 250px;
-             height: 100%;
-             content: "";
-             z-index: 2;
-         }
-         .logos:hover .logos-slide {
-             animation-play-state: paused;
-         }
-         .logos-slide {
-             display: inline-block;
-             animation: 35s slide infinite linear;
-         }
-         .logos-slide img {
-             height: 20px;
-             margin: 0 40px;
-         }
-         @media (max-width:600px) {
-             .logos-slide img {
-                 height: 20px;
-                 margin: 0 40px;
-             }
-         }
-      </style>
+         <style>
+            @keyframes slide {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+            .logos {
+                overflow: hidden;
+                padding: 20px 0;
+                background: white;
+                white-space: nowrap;
+                position: relative;
+            }
+            .logos::before, .logos::after {
+                position: absolute;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                content: "";
+                z-index: 2;
+            }
+            .logos:hover .logos-slide {
+                animation-play-state: paused;
+            }
+            .logos-slide {
+                display: inline-block;
+                animation: 35s slide infinite linear;
+            }
+            .logos-slide img {
+                height: 20px;
+                margin: 0 15px;
+                filter: grayscale(100%); /* Apply grayscale filter */
+            }
+            @media (max-width:600px) {
+                .logos-slide img {
+                    height: 20px;
+                    margin: 0 40px;
+                    filter: grayscale(100%); /* Ensure grayscale on smaller screens too */
+                }
+            }
+        </style>
+        
      <!-- Style for logo -->
      </div>
      <!-- /Featured In -->
@@ -683,7 +723,7 @@
                 }
                 /* Apply zoom effect on hover */
                 .grid-item:hover img {
-                    transform: scale(1.1); /* Zooms the image by 10% */
+                    transform: scale(1.04); /* Zooms the image by 10% */
                 }
                 .info {
                     background: rgba(247, 245, 245, 0.95); /* Slightly lighter background for readability */
