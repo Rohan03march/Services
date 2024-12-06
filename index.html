@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>ISKCON | Services</title>
-    <!-- Style for the body -->
-     <style>
+    <title>
+        ISKCON | Services
+    </title>
+
+    <!-- Body -->
+    <style>
         :root {
             --grid-gap-vertical: 50px
         }
@@ -34,537 +37,534 @@
         }
         
      </style>
-    <!-- /Style for the body -->
-
+    <!-- /Body -->
 </head>
 
 <body>
-
-   <!-- Header -->
-<div class="video-container">
-
-    <!-- video background for desktop -->
-    <video class="background-video" autoplay loop muted>
-        <source src="./assets/video/growingtree.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Static Image for mobile -->
-    <img class="mobile-image" src="./assets/Images/gettyimages-1204031983-612x612.jpg" alt="Static image for mobile"> 
-
-    <!-- Logo Image positioned at the top-left -->
-    <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo">
     
+    <!-- Header -->
+    <div class="video-container">
 
-    <!-- Logo Image positioned at the top-right -->
-    <img class="logo-image-right" src="./assets/Images/sp logo.png" alt="Logo">
-
-    <div class="text-overlay">
-        <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
-        <p>A sacred space to grow with grace,
-            Where love and wisdom interlace. <br/>
-            Young or old, all journeys start,
-            Come explore, and be a part.
-        </p>
-    </div>
-
-    <!-- Style -->
-    <style>
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-        }
-
-        /* Video background for desktop */
-        .background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(50%); /* Dim the video for readability */
-            z-index: -1; /* Ensure it's behind the text */
-        }
-
-        /* Static image for mobile devices */
-        .mobile-image {
-            display: none; /* Hidden by default */
-            width: 100%;
-            height: 100vh;
-            filter: brightness(40%);
-            object-fit: cover;
-        }
-
-        /* Logo positioned at the top-left */
-        .logo-image-left {
-            position: absolute;
-            top: 30px; /* Adjust as needed */
-            left: 20px; /* Adjust as needed */
-            width: 150px; /* Adjust the logo size */
-            z-index: 1; /* Ensure it's above the video */
-        }
-
-        /* Logo positioned at the top-right */
-        .logo-image-right {
-            position: absolute;
-            top: 30px; /* Adjust as needed */
-            right: 20px; /* Align to the right */
-            width: 70px; /* Adjust the logo size */
-            z-index: 1; /* Ensure it's above the video */
-        }
-
-        /* Text overlay style */
-        .text-overlay {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 1;
-        }
-
-        .text-overlay h1 {
-            font-family: 'Lora', serif;
-            font-size: 2.6em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .text-overlay p {
-            font-size: 1.5em;
-            font-family: 'Roboto', serif;
-        }
-
-        /* Responsive design */
-        @media only screen and (max-width: 768px) {
-            .background-video {
-                display: none; /* Hide the video on mobile */
-            }
-
-            .mobile-image {
-                display: block; /* Show the image on mobile */
-            }
-
-            .text-overlay {
-                align-items: center;
-                width: 90%;
-                margin-right: 30px;
-            }
-
-            .text-overlay h1 {
-                font-size: 2em;
-            }
-
-            .text-overlay p {
-                font-size: 1.2em;
-            }
-        }
-    </style>
-    <!-- /Style -->
-</div>
-<!-- /Header -->
-
-
-
-    <!-- Main -->
-     <h1 style="color: black;text-align:center;font-family:'Lora', serif; font-size:40px" class="heading">Discover ISKCON Bangalore's programs</h1>
-
-     <!-- Rounded box-->
-     <div class="rounded-box">
-        <p>
-           <q>Each thoughtfully crafted to offer a holistic approach to cultivating your growth, like a young sapling evolving into a strong, deeply rooted tree that bears fruit and stands resilient through life’s storms. 
-            Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, seva, volunteering, and more. Our offerings provide a nurturing space for learning, service, and personal growth, supporting your journey toward fulfillment and well-being. Explore, connect, and grow with grace!</q>
-        </p>
+        <!-- video background for desktop -->
+        <video class="background-video" autoplay loop muted>
+            <source src="./assets/video/growingtree.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     
-        <!-- Style for Rounded-box -->
-        <style>
-            .rounded-box {
-                border: 2px solid #ffffff;
-                border-radius: 15px;
-                padding: 20px;
-                background-color: #f1ecec;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-                max-width: 1000px;
-                margin: 20px auto;
-            }
+        <!-- Static Image for mobile -->
+        <img class="mobile-image" src="./assets/Images/gettyimages-1204031983-612x612.jpg" alt="Static image for mobile"> 
     
-            .rounded-box p {
-                font-family: 'Roboto', sans-serif;
-                line-height: 1.4;
-                color: #333;
-                font-size: 20px;
-                text-align: center;
-                position: relative;
-            }
-            @media (max-width:600px)  {
-                .rounded-box {
-                    margin-left: 15px;
-                    margin-right: 15px;
-                }
-
-                .rounded-box p {
-                    font-size: 15px;
-                    position: relative;
-                }
-            }
-        </style>
-        <!-- /Style for Rounded-box -->
-    </div>
-     <!-- /Rounded Box-->
-
-    <!-- Featured In -->
-    <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Featured In</h1>
-    <div class="logo">
-        <div class="logos">
-            <div class="logos-slide">
-                <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
-                <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
-                <img src="./assets/logos/thehindu-logo.svg">
-                <img src="./assets/logos/Hindustan_Times_logo.svg.png">
-                <img src="./assets/logos/CNBC_Logo_0.svg">
-                <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
-                <img src="./assets/logos/idXa34qurz_1732783119437.png">
-                <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
-            </div>
-            <div class="logos-slide">
-                <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
-                <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
-                <img src="./assets/logos/thehindu-logo.svg">
-                <img src="./assets/logos/Hindustan_Times_logo.svg.png">
-                <img src="./assets/logos/CNBC_Logo_0.svg">
-                <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
-                <img src="./assets/logos/idXa34qurz_1732783119437.png">
-                <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
-            </div>
+        <!-- Logo Image positioned at the top-left -->
+        <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo">
+        
+    
+        <!-- Logo Image positioned at the top-right -->
+        <img class="logo-image-right" src="./assets/Images/sp logo.png" alt="Logo">
+    
+        <div class="text-overlay">
+            <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
+            <p>A sacred space to grow with grace,
+                Where love and wisdom interlace. <br/>
+                Young or old, all journeys start,
+                Come explore, and be a part.
+            </p>
         </div>
-        <!-- Style for logo -->
-     <style>
-        @keyframes slide {
-            from {
-                transform: translateX(0);
+    
+        <!-- Style -->
+        <style>
+            .video-container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
             }
-            to {
-                transform: translateX(-100%);
+    
+            /* Video background for desktop */
+            .background-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(50%); /* Dim the video for readability */
+                z-index: -1; /* Ensure it's behind the text */
             }
-        }
-        .logos {
-            overflow: hidden;
-            padding: 20px 0;
-            background: white;
-            white-space: nowrap;
-            position: relative;
-        }
-        .logos::before,.logos:after {
-            position: absolute;
-            top: 0;
-            width: 250px;
-            height: 100%;
-            content: "";
-            z-index: 2;
-        }
-        .logos:hover .logos-slide {
-            animation-play-state: paused;
-        }
-        .logos-slide {
-            display: inline-block;
-            animation: 35s slide infinite linear;
-        }
-        .logos-slide img {
-            height: 20px;
-            margin: 0 40px;
-        }
-        @media (max-width:600px) {
-            .logos-slide img {
-                height: 20px;
-                margin: 0 40px;
-            }
-        }
-     </style>
-    <!-- Style for logo -->
-    </div>
-    <!-- /Featured In -->
-     <br>
-
-    <!-- Testimonials from Dignitaries -->
-     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold">What Our Dignitaries Say</h2>
-    <div class="containers">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-          
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                    <div class="imgbox animate__animated  "  >
-                            <img src="./assets/Images/lal-bahadur-shatri.png" alt="Los Angeles">
-                    </div>
-                        <div class="carousel-caption  animate__animated " >
-                        <p><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
-                        <h3 style="font-family:'Lora', serif;" >Lal Bahadur Shastri </h3>
-                           <p style="font-size:12px">Former Prime Minister of India</p> 
-
-                        </div>
-              </div>
-          
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/Hopkins.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
-                <h3 style="font-family:'Lora', serif;" >Dr. Thomas J. Hopkins </h3>
-                   <p style="font-size:12px">Late Professor of Religion, Franklin and Marshall College</p> 
-
-                </div>
-              </div>
-          
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/Modi.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
-                <h3 style="font-family:'Lora', serif;" >Narendra Modi</h3>
-                   <p style="font-size:12px">Prime Minister of India</p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/lata-mangeshkar.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Lata Mangeshkar</h3>
-                   <p style="font-size:12px">Legendary Indian Playback Singer</p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/atal-bihari-vajpayee.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Atal Bihari Vajpayee</h3>
-                   <p style="font-size:12px">Former Prime Minister of India</p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/pranab-mukerjee.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Pranab Mukherjee</h3>
-                   <p style="font-size:12px">Former President of India</p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/Edward.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Dr. Edward C Dimock, Jr.</h3>
-                   <p style="font-size:12px">Late Professor, Department of South Asian Languages and Civilization, University of Chicago
-                    </p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/Theresa_May.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Theresa May</h3>
-                   <p style="font-size:12px">Former U.K. Prime Minister
-                    </p> 
-
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="imgbox animate__animated  ">
-                    <img src="./assets/Images/hema-malini.png" alt="Los Angeles">
-            </div>
-            <div class="carousel-caption  animate__animated " >
-                <p><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
-                <h3 style="font-family:'Lora', serif;" >Hema Malini</h3>
-                   <p style="font-size:12px">Member of Parliament, Lok Sabha
-                    </p> 
-
-                </div>
-              </div>
-
-            </div>
-          
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <style>
-            /* General container styling */
-            .containers {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 400px;
-            }
-            
-            .imgbox img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
+    
+            /* Static image for mobile devices */
+            .mobile-image {
+                display: none; /* Hidden by default */
+                width: 100%;
+                height: 100vh;
+                filter: brightness(40%);
                 object-fit: cover;
             }
-        
-            .imgbox {
+    
+            /* Logo positioned at the top-left */
+            .logo-image-left {
+                position: absolute;
+                top: 30px; /* Adjust as needed */
+                left: 20px; /* Adjust as needed */
+                width: 150px; /* Adjust the logo size */
+                z-index: 1; /* Ensure it's above the video */
+            }
+    
+            /* Logo positioned at the top-right */
+            .logo-image-right {
+                position: absolute;
+                top: 30px; /* Adjust as needed */
+                right: 20px; /* Align to the right */
+                width: 70px; /* Adjust the logo size */
+                z-index: 1; /* Ensure it's above the video */
+            }
+    
+            /* Text overlay style */
+            .text-overlay {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 text-align: center;
+                color: white;
+                z-index: 1;
             }
-        
-            .carousel-control {
-                background: transparent!important;
+    
+            .text-overlay h1 {
+                font-family: 'Lora', serif;
+                font-size: 2.6em;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
-        
-            .glyphicon {
-                color: black;
+    
+            .text-overlay p {
+                font-size: 1.5em;
+                font-family: 'Roboto', serif;
             }
-        
-            /* Carousel styling */
-            .carousel {
-                background: white;
-                padding: 30px;
-                width: 50%;
-                height: 340px;
-                border-radius: 20px;
-                box-shadow: 1px 1px 30px #b1aeae;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-        
-            .carousel-caption p { 
-                color: black!important;
-                text-shadow: none;
-                font-family: 'Roboto', sans-serif;
-                padding: 0 80px!important;
-            }
-        
-            .carousel-caption h3 { 
-                color: black!important;
-                text-shadow: none;
-                font-family: 'Oswald', sans-serif;
-            }
-        
-            .carousel-caption {
-                position: relative!important;  
-                right: 0%!important;  
-                bottom: 0px!important;  
-                left: 0%!important;
-            }
-        
-            .carousel-indicators {
-                bottom: -4px;
-            }
-        
-            .carousel-indicators li {
-                width: 50px;
-                background: rgb(107, 81, 81);
-            }
-        
-            .carousel-indicators li.active {
-                width: 50px;
-                background: rgb(107, 81, 81);
-            }
-        
-            /* Mobile Responsiveness */
-            @media (max-width: 768px) {
-                .carousel {
-                    width: 80%;  /* Adjust the carousel width for smaller screens */
-                    height: auto; /* Let height adjust automatically */
-                    padding: 20px;  /* Reduce padding */
+    
+            /* Responsive design */
+            @media only screen and (max-width: 768px) {
+                .background-video {
+                    display: none; /* Hide the video on mobile */
                 }
-                
-                .imgbox img {
-                    width: 80px;  /* Smaller image size */
-                    height: 80px;  /* Smaller image size */
+    
+                .mobile-image {
+                    display: block; /* Show the image on mobile */
                 }
-        
-                .carousel-caption p {
-                    padding: 0 20px!important; /* Adjust padding for smaller screens */
+    
+                .text-overlay {
+                    align-items: center;
+                    width: 90%;
+                    margin-right: 30px;
                 }
-        
-                .carousel-caption h3 {
-                    font-size: 1.5rem;  /* Reduce font size for headings */
+    
+                .text-overlay h1 {
+                    font-size: 2em;
                 }
-        
-                .carousel-indicators li {
-                    width: 35px; /* Smaller indicator size */
-                }
-        
-                .carousel-indicators {
-                    bottom: -10px; /* Adjust the position of indicators */
-                }
-            }
-        
-            /* Mobile first approach: apply styles for very small screens */
-            @media (max-width: 480px) {
-                .carousel {
-                    width: 90%;  /* Further reduce width for very small screens */
-                    padding: 15px; /* Further reduce padding */
-                }
-        
-                .carousel-caption p {
-                    padding: 0 10px!important; /* Further adjust padding */
-                }
-        
-                .carousel-caption h3 {
-                    font-size: 1.2rem;  /* Reduce heading font size more */
-                }
-        
-                .imgbox img {
-                    width: 70px;  /* Further reduce image size */
-                    height: 70px;  /* Further reduce image size */
-                }
-        
-                .carousel-indicators li {
-                    width: 30px;  /* Even smaller indicator size */
+    
+                .text-overlay p {
+                    font-size: 1.2em;
                 }
             }
         </style>
-        
-        </div>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- /Testimonials from Dignitaries -->
+        <!-- /Style -->
 
-    <!-- Image Grid -->
+    </div>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <h1 style="color: black;text-align:center;font-family:'Lora', serif; font-size:40px" class="heading">Discover ISKCON Bangalore's programs</h1>
+
+    <!-- Rounded box-->
+    <div class="rounded-box">
+       <p>
+          <q>Each thoughtfully crafted to offer a holistic approach to cultivating your growth, like a young sapling evolving into a strong, deeply rooted tree that bears fruit and stands resilient through life’s storms. 
+           Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, seva, volunteering, and more. Our offerings provide a nurturing space for learning, service, and personal growth, supporting your journey toward fulfillment and well-being. Explore, connect, and grow with grace!</q>
+       </p>
+   
+       <!-- Style for Rounded-box -->
+       <style>
+           .rounded-box {
+               border: 2px solid #ffffff;
+               border-radius: 15px;
+               padding: 20px;
+               background-color: #f1ecec;
+               box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+               max-width: 1000px;
+               margin: 20px auto;
+           }
+   
+           .rounded-box p {
+               font-family: 'Roboto', sans-serif;
+               line-height: 1.4;
+               color: #333;
+               font-size: 20px;
+               text-align: center;
+               position: relative;
+           }
+           @media (max-width:600px)  {
+               .rounded-box {
+                   margin-left: 15px;
+                   margin-right: 15px;
+               }
+
+               .rounded-box p {
+                   font-size: 15px;
+                   position: relative;
+               }
+           }
+       </style>
+       <!-- /Style for Rounded-box -->
+   </div>
+    <!-- /Rounded Box-->
+
+     <!-- Featured In -->
+     <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Featured In</h1>
+     <div class="logo">
+         <div class="logos">
+             <div class="logos-slide">
+                 <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
+                 <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
+                 <img src="./assets/logos/thehindu-logo.svg">
+                 <img src="./assets/logos/Hindustan_Times_logo.svg.png">
+                 <img src="./assets/logos/CNBC_Logo_0.svg">
+                 <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
+                 <img src="./assets/logos/idXa34qurz_1732783119437.png">
+                 <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
+             </div>
+             <div class="logos-slide">
+                 <img src="./assets/logos/The New York Times_idi8lGMvEk_0.svg">
+                 <img src="./assets/logos/The Times Of India_idXkHqyGrR_1.svg">
+                 <img src="./assets/logos/thehindu-logo.svg">
+                 <img src="./assets/logos/Hindustan_Times_logo.svg.png">
+                 <img src="./assets/logos/CNBC_Logo_0.svg">
+                 <img src="./assets/logos/TIMES NOW_idihf-iG6v_1.svg" >
+                 <img src="./assets/logos/idXa34qurz_1732783119437.png">
+                 <img src="./assets/logos/DH_Deccan_Herald-ezgif.com-webp-to-jpg-converter.jpg">
+             </div>
+         </div>
+         <!-- Style for logo -->
+      <style>
+         @keyframes slide {
+             from {
+                 transform: translateX(0);
+             }
+             to {
+                 transform: translateX(-100%);
+             }
+         }
+         .logos {
+             overflow: hidden;
+             padding: 20px 0;
+             background: white;
+             white-space: nowrap;
+             position: relative;
+         }
+         .logos::before,.logos:after {
+             position: absolute;
+             top: 0;
+             width: 250px;
+             height: 100%;
+             content: "";
+             z-index: 2;
+         }
+         .logos:hover .logos-slide {
+             animation-play-state: paused;
+         }
+         .logos-slide {
+             display: inline-block;
+             animation: 35s slide infinite linear;
+         }
+         .logos-slide img {
+             height: 20px;
+             margin: 0 40px;
+         }
+         @media (max-width:600px) {
+             .logos-slide img {
+                 height: 20px;
+                 margin: 0 40px;
+             }
+         }
+      </style>
+     <!-- Style for logo -->
+     </div>
+     <!-- /Featured In -->
+      <br>
+        <!-- Testimonials from Dignitaries -->
+     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold">What Our Dignitaries Say</h2>
+     <div class="containers">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             <!-- Indicators -->
+             <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+             </ol>
+           
+             <!-- Wrapper for slides -->
+             <div class="carousel-inner">
+               <div class="item active">
+                     <div class="imgbox animate__animated  "  >
+                             <img src="./assets/Images/lal-bahadur-shatri.png" alt="Los Angeles">
+                     </div>
+                         <div class="carousel-caption  animate__animated " >
+                         <p><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
+                         <h3 style="font-family:'Lora', serif;" >Lal Bahadur Shastri </h3>
+                            <p style="font-size:12px">Former Prime Minister of India</p> 
+ 
+                         </div>
+               </div>
+           
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/Hopkins.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Dr. Thomas J. Hopkins </h3>
+                    <p style="font-size:12px">Late Professor of Religion, Franklin and Marshall College</p> 
+ 
+                 </div>
+               </div>
+           
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/Modi.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Narendra Modi</h3>
+                    <p style="font-size:12px">Prime Minister of India</p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/lata-mangeshkar.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Lata Mangeshkar</h3>
+                    <p style="font-size:12px">Legendary Indian Playback Singer</p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/atal-bihari-vajpayee.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Atal Bihari Vajpayee</h3>
+                    <p style="font-size:12px">Former Prime Minister of India</p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/pranab-mukerjee.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Pranab Mukherjee</h3>
+                    <p style="font-size:12px">Former President of India</p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/Edward.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Dr. Edward C Dimock, Jr.</h3>
+                    <p style="font-size:12px">Late Professor, Department of South Asian Languages and Civilization, University of Chicago
+                     </p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/Theresa_May.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Theresa May</h3>
+                    <p style="font-size:12px">Former U.K. Prime Minister
+                     </p> 
+ 
+                 </div>
+               </div>
+ 
+               <div class="item">
+                 <div class="imgbox animate__animated  ">
+                     <img src="./assets/Images/hema-malini.png" alt="Los Angeles">
+             </div>
+             <div class="carousel-caption  animate__animated " >
+                 <p><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
+                 <h3 style="font-family:'Lora', serif;" >Hema Malini</h3>
+                    <p style="font-size:12px">Member of Parliament, Lok Sabha
+                     </p> 
+ 
+                 </div>
+               </div>
+ 
+             </div>
+           
+             <!-- Left and right controls -->
+             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               <span class="sr-only">Next</span>
+             </a>
+           </div>
+           <style>
+             /* General container styling */
+             .containers {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 height: 400px;
+             }
+             
+             .imgbox img {
+                 width: 100px;
+                 height: 100px;
+                 border-radius: 50%;
+                 object-fit: cover;
+             }
+         
+             .imgbox {
+                 text-align: center;
+             }
+         
+             .carousel-control {
+                 background: transparent!important;
+             }
+         
+             .glyphicon {
+                 color: black;
+             }
+         
+             /* Carousel styling */
+             .carousel {
+                 background: white;
+                 padding: 30px;
+                 width: 50%;
+                 height: 340px;
+                 border-radius: 20px;
+                 box-shadow: 1px 1px 30px #b1aeae;
+                 position: relative;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 flex-direction: column;
+             }
+         
+             .carousel-caption p { 
+                 color: black!important;
+                 text-shadow: none;
+                 font-family: 'Roboto', sans-serif;
+                 padding: 0 80px!important;
+             }
+         
+             .carousel-caption h3 { 
+                 color: black!important;
+                 text-shadow: none;
+                 font-family: 'Oswald', sans-serif;
+             }
+         
+             .carousel-caption {
+                 position: relative!important;  
+                 right: 0%!important;  
+                 bottom: 0px!important;  
+                 left: 0%!important;
+             }
+         
+             .carousel-indicators {
+                 bottom: -4px;
+             }
+         
+             .carousel-indicators li {
+                 width: 50px;
+                 background: rgb(107, 81, 81);
+             }
+         
+             .carousel-indicators li.active {
+                 width: 50px;
+                 background: rgb(107, 81, 81);
+             }
+         
+             /* Mobile Responsiveness */
+             @media (max-width: 768px) {
+                 .carousel {
+                     width: 80%;  /* Adjust the carousel width for smaller screens */
+                     height: auto; /* Let height adjust automatically */
+                     padding: 20px;  /* Reduce padding */
+                 }
+                 
+                 .imgbox img {
+                     width: 80px;  /* Smaller image size */
+                     height: 80px;  /* Smaller image size */
+                 }
+         
+                 .carousel-caption p {
+                     padding: 0 20px!important; /* Adjust padding for smaller screens */
+                 }
+         
+                 .carousel-caption h3 {
+                     font-size: 1.5rem;  /* Reduce font size for headings */
+                 }
+         
+                 .carousel-indicators li {
+                     width: 35px; /* Smaller indicator size */
+                 }
+         
+                 .carousel-indicators {
+                     bottom: -10px; /* Adjust the position of indicators */
+                 }
+             }
+         
+             /* Mobile first approach: apply styles for very small screens */
+             @media (max-width: 480px) {
+                 .carousel {
+                     width: 90%;  /* Further reduce width for very small screens */
+                     padding: 15px; /* Further reduce padding */
+                 }
+         
+                 .carousel-caption p {
+                     padding: 0 10px!important; /* Further adjust padding */
+                 }
+         
+                 .carousel-caption h3 {
+                     font-size: 1.2rem;  /* Reduce heading font size more */
+                 }
+         
+                 .imgbox img {
+                     width: 70px;  /* Further reduce image size */
+                     height: 70px;  /* Further reduce image size */
+                 }
+         
+                 .carousel-indicators li {
+                     width: 30px;  /* Even smaller indicator size */
+                 }
+             }
+         </style>
+         
+         </div>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!-- /Testimonials from Dignitaries -->
+
+     <!-- Image Grid -->
      <div class="grid">
         <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">Children & Teens</h1>
         <div class="grid-container">
@@ -1169,750 +1169,754 @@
     <!-- /Image Grid -->
  <br/>
 
-    <!-- Science -->
-    <h1 style="font-family: 'Lora', serif;text-align:center">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
-    <div class="science">
-        <div class="science-container">
-          <div class="text">
-            <p>
-                <li>Reduced stress and anxiety</li>
-                <li>Enhanced cognitive abilities</li>
-                <li>Improved emotional well-being</li>
-            </p>
-          </div>
-          <div class="image">
-            <img src="./assets/Images/break_old_patterns.svg" alt="Image Description">
-          </div>
-        </div>
-        <style>
-          .science {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-          }
-      
-          .science-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-          }
-      
-          .text {
-            flex: 1;
-            padding: 20px;
-            max-width: 500px;
-          }
-      
-          .image {
-            flex: 1;
-            max-width: 500px;
-          }
-      
-          .image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-          }
-      
-          h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-          }
-      
-        li {
-            font-size: 30px;
-            color: #555;
-          }
-      
-          /* Responsive Design */
-          @media (max-width: 768px) {
-            .science-container {
-              flex-direction: column;
-              text-align: center;
-            }
+ <!-- Science -->
+ <h1 style="font-family: 'Lora', serif;text-align:center">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+ <div class="science">
+     <div class="science-container">
+       <div class="text">
+         <p>
+             <li>Reduced stress and anxiety</li>
+             <li>Enhanced cognitive abilities</li>
+             <li>Improved emotional well-being</li>
+         </p>
+       </div>
+       <div class="image">
+         <img src="./assets/Images/break_old_patterns.svg" alt="Image Description">
+       </div>
+     </div>
+     <style>
+       .science {
+         font-family: Arial, sans-serif;
+         line-height: 1.6;
+         padding: 20px;
+       }
+   
+       .science-container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 20px;
+       }
+   
+       .text {
+         flex: 1;
+         padding: 20px;
+         max-width: 500px;
+       }
+   
+       .image {
+         flex: 1;
+         max-width: 500px;
+       }
+   
+       .image img {
+         width: 100%;
+         height: auto;
+         border-radius: 10px;
+       }
+   
+       h1 {
+         font-size: 24px;
+         margin-bottom: 10px;
+         color: #333;
+       }
+   
+     li {
+         font-size: 30px;
+         color: #555;
+       }
+   
+       /* Responsive Design */
+       @media (max-width: 768px) {
+         .science-container {
+           flex-direction: column;
+           text-align: center;
+         }
 
-            li {
-                font-size: 18px;
-            }
-      
-            .text {
-              max-width: 100%;
-              margin-bottom: 20px;
-            }
-      
-            .image {
-              max-width: 100%;
-              order: -1; /* Make the image appear first (on top of text) */
-            }
-          }
-      
-        </style>
-      </div>
-    <!-- /Science -->
+         li {
+             font-size: 18px;
+         }
+   
+         .text {
+           max-width: 100%;
+           margin-bottom: 20px;
+         }
+   
+         .image {
+           max-width: 100%;
+           order: -1; /* Make the image appear first (on top of text) */
+         }
+       }
+   
+     </style>
+   </div>
+ <!-- /Science -->
 
-       <!-- testimonials-->
-       <section style="padding-top: 30px;" id="">
-        <div class="container">
-            <div class="row justify-content-center">
-    
-                <div class="col-12 text-center">
-                    <h2 class="mb-4" style="font-family: 'Lora', serif;">What our Participants say about us.</h2>
-                </div>
-                <div class="test">
-                    <section>
-                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
-                    <div class="testimonials-carousel-wrap">
-                        <div class="listing-carousel-button listing-carousel-button-next"></div>
-                        <div class="listing-carousel-button listing-carousel-button-prev"></div>
-                        <div class="testimonials-carousel">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    
-                                    <!--3rd-->
+ <!-- testimonials-->
+ <section style="padding-top: 30px;" id="">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-12 text-center">
+                <h2 class="mb-4" style="font-family: 'Lora', serif;">What our Participants say about us.</h2>
+            </div>
+            <div class="test">
+                <section>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+                <div class="testimonials-carousel-wrap">
+                    <div class="listing-carousel-button listing-carousel-button-next"></div>
+                    <div class="listing-carousel-button listing-carousel-button-prev"></div>
+                    <div class="testimonials-carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                
+                                <!--3rd-->
 <div class="swiper-slide">
-    <div class="testi-item">
-       
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-            <p>Sessions have helped me take my relationships to a whole new level. I have realised the tremendous response in my personl and professional relationships.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Sunith Tripathi <br/> ICWA, Faculty CMR Group of Institutions.</h3>
-            </div>
+<div class="testi-item">
+   
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
+        <p>Sessions have helped me take my relationships to a whole new level. I have realised the tremendous response in my personl and professional relationships.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Sunith Tripathi <br/> ICWA, Faculty CMR Group of Institutions.</h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
-  
-  <!--4th-->
-  <div class="swiper-slide">
-    <div class="testi-item">
-       
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--4th-->
+<div class="swiper-slide">
+<div class="testi-item">
+   
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
+    
+        <p>Very well-planned and executed trip. The accommodation was excellent, and patient and ever-smiling organizers. Special darshans were arranged, saving us time. Overall a memorable yatra. Kirtans and Bhajans en route kept us occupied.
+            Hare Krishna!
+            </p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Student</h3>
+        </div>
+    </div>
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--5th-->
+<div class="swiper-slide">
+<div class="testi-item">
+   
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
         
-            <p>Very well-planned and executed trip. The accommodation was excellent, and patient and ever-smiling organizers. Special darshans were arranged, saving us time. Overall a memorable yatra. Kirtans and Bhajans en route kept us occupied.
-                Hare Krishna!
-                </p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Student</h3>
-            </div>
+        <p>Changes your concept that satvik food is boring. They have transformed this simple cooking style into a gourmet experience. You can indulge into the dishes without guilt. Ambience is good. Staff is courteous. Making your ISKCON experience even more divine</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Aastha lal</h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
-  
-  <!--5th-->
-  <div class="swiper-slide">
-    <div class="testi-item">
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--6th--->
+<div class="swiper-slide">
+<div class="testi-item">
+   
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
        
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-            
-            <p>Changes your concept that satvik food is boring. They have transformed this simple cooking style into a gourmet experience. You can indulge into the dishes without guilt. Ambience is good. Staff is courteous. Making your ISKCON experience even more divine</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Aastha lal</h3>
-            </div>
+        <p>Appreciate the efforts taken by the organizers and teachers in conducting this trip. Children have had a great experience with a blend of both learning and entertainment. The narration of the trip is never-ending. This shows they had a great time.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Parent</h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
-  
-  <!--6th--->
-  <div class="swiper-slide">
-    <div class="testi-item">
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--7th--->
+<div class="swiper-slide">
+<div class="testi-item">
+    
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
        
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-           
-            <p>Appreciate the efforts taken by the organizers and teachers in conducting this trip. Children have had a great experience with a blend of both learning and entertainment. The narration of the trip is never-ending. This shows they had a great time.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Parent</h3>
-            </div>
+        <p>After attending this workshop, I have become very conscious and conscientious about my food habits and lifestyle. These points have driven home the significance of Diet and Healthy habits which I learn as part of my medical academic course.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Dr. Vivekananda Bhat <br/>
+                MBBS, MD
+                </h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
-  
-  <!--7th--->
-  <div class="swiper-slide">
-    <div class="testi-item">
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--8th--->
+<div class="swiper-slide">
+<div class="testi-item">
+   
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
+       
+        <p>Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Vivek, IT Professional</h3>
+        </div>
+    </div>
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--9th--->
+<div class="swiper-slide">
+<div class="testi-item">
+    
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
         
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-           
-            <p>After attending this workshop, I have become very conscious and conscientious about my food habits and lifestyle. These points have driven home the significance of Diet and Healthy habits which I learn as part of my medical academic course.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Dr. Vivekananda Bhat <br/>
-                    MBBS, MD
-                    </h3>
-            </div>
+        <p>The Culture Camp is an excellent medium to teach our kids Vedic culture & values. My niece thoroughly enjoyed her experience & the teachers were very good in inculcating modern glass-painting and other techniques to capture the children’s attention away from the Idiot Box even after coming home.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Mr. Deepak Janardhana (Team Lead, Intel)</h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<!--10th--->
+<div class="swiper-slide">
+<div class="testi-item">
   
-  <!--8th--->
-  <div class="swiper-slide">
-    <div class="testi-item">
-       
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-           
-            <p>Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Vivek, IT Professional</h3>
-            </div>
-        </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-    </div>
-  </div>
-  
-  <!--9th--->
-  <div class="swiper-slide">
-    <div class="testi-item">
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
         
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-            
-            <p>The Culture Camp is an excellent medium to teach our kids Vedic culture & values. My niece thoroughly enjoyed her experience & the teachers were very good in inculcating modern glass-painting and other techniques to capture the children’s attention away from the Idiot Box even after coming home.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Mr. Deepak Janardhana (Team Lead, Intel)</h3>
-            </div>
+        <p>The simple yet profoundly effective mantra meditation has brought a new energy to face the challenges of the professional life with renewed vigor.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Shubham Fitkariwala <br/>
+                CA, KPMG
+                </h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="testi-item">
   
-  <!--10th--->
-  <div class="swiper-slide">
-    <div class="testi-item">
-      
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-            
-            <p>The simple yet profoundly effective mantra meditation has brought a new energy to face the challenges of the professional life with renewed vigor.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Shubham Fitkariwala <br/>
-                    CA, KPMG
-                    </h3>
-            </div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
+        
+        <p>Hello every one, we are the parents of Darsh Agarwal of class 4. We are extremely happy about Darsh’s improvement. This school is not focusing about Bookish knowledge but the research-based study. Not copy pasting the answers but to understand the answers. I am so happy the way courses are conducted. They way of teaching is excellent . IGCSE curriculum is advanced, more interactive, its not limited only within class. Thanks a lot.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Darsh Agarwal (Class 4)
+                </h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="testi-item">
   
-  <div class="swiper-slide">
-    <div class="testi-item">
-      
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
-            
-            <p>Hello every one, we are the parents of Darsh Agarwal of class 4. We are extremely happy about Darsh’s improvement. This school is not focusing about Bookish knowledge but the research-based study. Not copy pasting the answers but to understand the answers. I am so happy the way courses are conducted. They way of teaching is excellent . IGCSE curriculum is advanced, more interactive, its not limited only within class. Thanks a lot.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Darsh Agarwal (Class 4)
-                    </h3>
-            </div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text">
+        
+        <p>I was truly delighted with ISKCON’s culture camp program. My son was introduced to value based education and most importantly he learnt how to treat others, how to respect others, how to love others, what is his responsibility towards family and society.</p>
+        <a href="#" class="text-link"></a>
+        <div class="testimonials-avatar">
+            <h3>Ms. Samita Swain (Senior Software Developer, Dell)
+                </h3>
         </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
     </div>
-  </div>
-  
-  <div class="swiper-slide">
-    <div class="testi-item">
-      
-        <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-        <div class="testimonials-text">
+    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+</div>
+</div>
+                                <!--testi end-->
             
-            <p>I was truly delighted with ISKCON’s culture camp program. My son was introduced to value based education and most importantly he learnt how to treat others, how to respect others, how to love others, what is his responsibility towards family and society.</p>
-            <a href="#" class="text-link"></a>
-            <div class="testimonials-avatar">
-                <h3>Ms. Samita Swain (Senior Software Developer, Dell)
-                    </h3>
-            </div>
-        </div>
-        <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
-    </div>
-  </div>
-                                    <!--testi end-->
-                
-                                </div>
                             </div>
                         </div>
-                
-                        <div class="tc-pagination"></div>
                     </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-                </section>
-                <style>
-                  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-                
-                .test{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                }
-                
-                section{
-                    float: left;
-                    position: relative;
-                    padding: 30px 0;
-                    background: #fcfcfd;
-                    z-index: 1;
-                    width: 100%;
-                }
-                .section-title{
-                    float: left;
-                    position: relative;
-                    width: 100%;
-                    padding-bottom: 40px; 
-                }
-                .section-title p{
-                    color: #3a639b;
-                    font-size: 13px;
-                    line-height: 20px;
-                    max-width: 550px;
-                    margin: 0 auto;
-                }
-                .section-title h2 {
-                    float: left;
-                    width: 100%;
-                    text-align: center;
-                    color: #007aff;
-                    font-size: 34px;
-                    font-weight: 800;
-                    position: relative;
-                }
-                .section-separator {
-                    float: left;
-                    width: 100%;
-                    position: relative;
-                    margin: 20px 0;
-                }
-                .section-separator:before{
-                    content: '';
-                    position: absolute;
-                    left: 50%;
-                    top: 0;
-                    height: 3px;
-                    width: 50px;
-                    border-radius: 3px;
-                    z-index: 2;
-                    background-color: #007aff;
-                    margin-left: -25px;
-                }
-                .swiper-container {
-                    width: 100%;
-                    height: 100%;
-                }
-                /* Styling the carousel button */
+            
+                    <div class="tc-pagination"></div>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+            </section>
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+            
+            .test{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+            
+            section{
+                float: left;
+                position: relative;
+                padding: 30px 0;
+                background: #fcfcfd;
+                z-index: 1;
+                width: 100%;
+            }
+            .section-title{
+                float: left;
+                position: relative;
+                width: 100%;
+                padding-bottom: 40px; 
+            }
+            .section-title p{
+                color: #3a639b;
+                font-size: 13px;
+                line-height: 20px;
+                max-width: 550px;
+                margin: 0 auto;
+            }
+            .section-title h2 {
+                float: left;
+                width: 100%;
+                text-align: center;
+                color: #007aff;
+                font-size: 34px;
+                font-weight: 800;
+                position: relative;
+            }
+            .section-separator {
+                float: left;
+                width: 100%;
+                position: relative;
+                margin: 20px 0;
+            }
+            .section-separator:before{
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 0;
+                height: 3px;
+                width: 50px;
+                border-radius: 3px;
+                z-index: 2;
+                background-color: #007aff;
+                margin-left: -25px;
+            }
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+            /* Styling the carousel button */
 .listing-carousel-button {
-    position: absolute;
-    top: 50%;
-    width: 80px;
-    height: 50px;
-    line-height: 50px;
-    margin-top: -25px;
-    z-index: 100;
-    cursor: pointer;
-    background: #007aff; /* Blue background */
-    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
-    transition: all 200ms linear;
-    outline: none;
-    text-align: center;
-    font-size: 24px; /* Adjust size of the arrows */
-    color: white; /* White text color for arrows */
-  }
-  
-  /* Right (next) button */
-  .listing-carousel-button-next::before {
-    content: '\2192'; /* Unicode for right arrow (→) */
-  }
-  
-  /* Left (previous) button */
-  .listing-carousel-button-prev::before {
-    content: '\2190'; /* Unicode for left arrow (←) */
-  }
-  
-                .listing-carousel-button.listing-carousel-button-next{
-                    right: -30px;
-                    border-radius: 60px 0 0 60px;
-                }
-                /* Mobile styles */
+position: absolute;
+top: 50%;
+width: 80px;
+height: 50px;
+line-height: 50px;
+margin-top: -25px;
+z-index: 100;
+cursor: pointer;
+background: #007aff; /* Blue background */
+box-shadow: 0 9px 26px rgba(58, 87, 135, 0.45);
+transition: all 200ms linear;
+outline: none;
+text-align: center;
+font-size: 24px; /* Adjust size of the arrows */
+color: white; /* White text color for arrows */
+}
+
+/* Right (next) button */
+.listing-carousel-button-next::before {
+content: '\2192'; /* Unicode for right arrow (→) */
+}
+
+/* Left (previous) button */
+.listing-carousel-button-prev::before {
+content: '\2190'; /* Unicode for left arrow (←) */
+}
+
+            .listing-carousel-button.listing-carousel-button-next{
+                right: -30px;
+                border-radius: 60px 0 0 60px;
+            }
+            /* Mobile styles */
 @media (max-width: 768px) { /* Adjust the max-width as needed */
 .listing-carousel-button.listing-carousel-button-next {
 right: 1px;
 width: 50px;
 }
 }
-                .listing-carousel-button.listing-carousel-button-prev{
-                    left: -30px;
-                    padding-left: 20px;
-                    border-radius: 0 60px 60px 0;
+            .listing-carousel-button.listing-carousel-button-prev{
+                left: -30px;
+                padding-left: 20px;
+                border-radius: 0 60px 60px 0;
+            }
+            @media (max-width: 768px) { /* Adjust the max-width as needed */
+                .listing-carousel-button.listing-carousel-button-prev {
+                    right: 0px;
+                    width: 60px;
                 }
-                @media (max-width: 768px) { /* Adjust the max-width as needed */
-                    .listing-carousel-button.listing-carousel-button-prev {
-                        right: 0px;
-                        width: 60px;
-                    }
-                }
-                .listing-carousel-button.listing-carousel-button-next:hover{
-                    right: -15px;
-                    background: rgba(6,27,65,0.4);
-                }
-                .listing-carousel-button.listing-carousel-button-prev:hover{
-                    left: -15px;
-                    background: rgba(6,27,65,0.4);
-                }
-                .testi-item {
-                    transition: all .3s ease-in-out;
-                    transform: scale(0.9);
-                    opacity: 0.9;
-                }
-                .testimonials-text {
-                    padding: 75px 50px 75px;
-                    overflow:hidden;
-                    background: #f5f6fa;
-                    border:1ps solid #f1f1f1;
-                    border-radius: 10px;
-                    transition: all .3s ease-in-out;
-                }
-                .testimonials-text-after{
-                    font-style: normal;
-                    font-weight: normal;
-                    text-decoration: inherit;
-                    position: absolute;
-                    color: #ccc;
-                    opacity: .3;
-                    font-size: 35px;
-                    transition: all 400ms linear;
-                    bottom: 25px;
-                    right: 30px;
-                }
-                .testimonials-text-before{
-                    font-style: normal;
-                    font-weight: normal;
-                    text-decoration: inherit;
-                    position: absolute;
-                    color: #ccc;
-                    opacity: .3;
-                    font-size: 35px;
-                    transition: all 400ms linear;
-                    top: 25px;
-                    left: 30px;
-                }
-                .testimonials-text .listing-rating{
-                    float: none;
-                    display: inline-block;
-                    margin-bottom: 12px;
-                }
-                .listing-rating i{
-                    color: #007aff;
-                }
-                .testimonials-avatar h3{
-                    font-weight: 600;
-                    color: #7d93b2;
-                    font-size: 18px;
-                }
-                .testimonials-avatar h4{
-                     font-weight:400;
-                     font-size:12px;
-                     padding-top:6px;
-                     color:#007aff;
-                }
-                .testimonials-carousel .swiper-slide{
-                    padding: 30px 0;
-                }	 
-                .testi-avatar{
-                    position: absolute;
-                    left: 50%;
-                    top: -30px;
-                    width: 90px;
-                    height: 90px;
-                    margin-left: -45px;
-                    z-index: 20;
-                }
-                .testi-avatar img{
-                    width: 90px;
-                    height: 90px;
-                    float: left;
-                    border-radius: 100%;
-                    border:6px solid #fff;
-                    box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
-                }
-                .swiper-slide-active .testimonials-text {
-                    background: #fff;
-                    box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
-                }
-                .testimonials-text p{
-                    color: #878c9f;
-                    font-size: 14px;
-                    font-family: Georgia, "Times New Roman", Times, serif;
-                    font-style: italic;
-                    line-height: 24px;
-                    padding-bottom: 10px;
-                    font-weight: 500;
-                }
-                .text-link{
-                    position: absolute;
-                    bottom:0;
-                    padding: 15px 0;
-                    border-radius: 10px 10px 0 0;
-                    background: #f9f9f9;
-                    border:1px solid #eee;
-                    box-shadow: 0 10px 15px rgba(0,0,0,0.03);
-                    left: 50%;
-                    width: 200px;
-                    margin-left: -100px;
-                }
-                .swiper-slide-active .testi-item{
-                    opacity: 1;
-                    transform: scale(1.0);
-                }
-                .tc-pagination{
-                    float: left;
-                    margin-top: 10px;
-                    width: 100% !important;
-                }
-                .tc-pagination_wrap {
-                    position: absolute;
-                    bottom: -40px;
-                    left: 0;
-                    width: 100%;
-                }
-                .tc-pagination2{
-                    float: none;
-                    display: inline-block;
-                    padding: 14px 0;
-                    background: #fff;
-                    border-radius: 30px;
-                    min-width: 250px;
-                    border-bottom: 0;
-                }
-                .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
-                    opacity: 1;
-                    background: #384f95;
-                    margin:0 2px;
-                    width: 10px;
-                    height: 10px;
-                    transition: all 300ms ease-in-out;
-                }
-                </style>
-                <script>
-                  //   all ------------------
-                function initParadoxWay() {
-                  "use strict";
-                 
-                  if ($(".testimonials-carousel").length > 0) {
-                      var j2 = new Swiper(".testimonials-carousel .swiper-container", {
-                          preloadImages: false,
-                          slidesPerView: 1,
-                          spaceBetween: 20,
-                          loop: true,
-                          grabCursor: true,
-                          mousewheel: false,
-                          centeredSlides: true,
-                          pagination: {
-                              el: '.tc-pagination',
-                              clickable: true,
-                              dynamicBullets: true,
+            }
+            .listing-carousel-button.listing-carousel-button-next:hover{
+                right: -15px;
+                background: rgba(6,27,65,0.4);
+            }
+            .listing-carousel-button.listing-carousel-button-prev:hover{
+                left: -15px;
+                background: rgba(6,27,65,0.4);
+            }
+            .testi-item {
+                transition: all .3s ease-in-out;
+                transform: scale(0.9);
+                opacity: 0.9;
+            }
+            .testimonials-text {
+                padding: 75px 50px 75px;
+                overflow:hidden;
+                background: #f5f6fa;
+                border:1ps solid #f1f1f1;
+                border-radius: 10px;
+                transition: all .3s ease-in-out;
+            }
+            .testimonials-text-after{
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                position: absolute;
+                color: #ccc;
+                opacity: .3;
+                font-size: 35px;
+                transition: all 400ms linear;
+                bottom: 25px;
+                right: 30px;
+            }
+            .testimonials-text-before{
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                position: absolute;
+                color: #ccc;
+                opacity: .3;
+                font-size: 35px;
+                transition: all 400ms linear;
+                top: 25px;
+                left: 30px;
+            }
+            .testimonials-text .listing-rating{
+                float: none;
+                display: inline-block;
+                margin-bottom: 12px;
+            }
+            .listing-rating i{
+                color: #007aff;
+            }
+            .testimonials-avatar h3{
+                font-weight: 600;
+                color: #7d93b2;
+                font-size: 18px;
+            }
+            .testimonials-avatar h4{
+                 font-weight:400;
+                 font-size:12px;
+                 padding-top:6px;
+                 color:#007aff;
+            }
+            .testimonials-carousel .swiper-slide{
+                padding: 30px 0;
+            }	 
+            .testi-avatar{
+                position: absolute;
+                left: 50%;
+                top: -30px;
+                width: 90px;
+                height: 90px;
+                margin-left: -45px;
+                z-index: 20;
+            }
+            .testi-avatar img{
+                width: 90px;
+                height: 90px;
+                float: left;
+                border-radius: 100%;
+                border:6px solid #fff;
+                box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+            }
+            .swiper-slide-active .testimonials-text {
+                background: #fff;
+                box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+            }
+            .testimonials-text p{
+                color: #878c9f;
+                font-size: 14px;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-style: italic;
+                line-height: 24px;
+                padding-bottom: 10px;
+                font-weight: 500;
+            }
+            .text-link{
+                position: absolute;
+                bottom:0;
+                padding: 15px 0;
+                border-radius: 10px 10px 0 0;
+                background: #f9f9f9;
+                border:1px solid #eee;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.03);
+                left: 50%;
+                width: 200px;
+                margin-left: -100px;
+            }
+            .swiper-slide-active .testi-item{
+                opacity: 1;
+                transform: scale(1.0);
+            }
+            .tc-pagination{
+                float: left;
+                margin-top: 10px;
+                width: 100% !important;
+            }
+            .tc-pagination_wrap {
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                width: 100%;
+            }
+            .tc-pagination2{
+                float: none;
+                display: inline-block;
+                padding: 14px 0;
+                background: #fff;
+                border-radius: 30px;
+                min-width: 250px;
+                border-bottom: 0;
+            }
+            .tc-pagination .swiper-pagination-bullet, .tc-pagination2.swiper-pagination-bullet{
+                opacity: 1;
+                background: #384f95;
+                margin:0 2px;
+                width: 10px;
+                height: 10px;
+                transition: all 300ms ease-in-out;
+            }
+            </style>
+            <script>
+              //   all ------------------
+            function initParadoxWay() {
+              "use strict";
+             
+              if ($(".testimonials-carousel").length > 0) {
+                  var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+                      preloadImages: false,
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                      loop: true,
+                      grabCursor: true,
+                      mousewheel: false,
+                      centeredSlides: true,
+                      pagination: {
+                          el: '.tc-pagination',
+                          clickable: true,
+                          dynamicBullets: true,
+                      },
+                      navigation: {
+                          nextEl: '.listing-carousel-button-next',
+                          prevEl: '.listing-carousel-button-prev',
+                      },
+                      breakpoints: {
+                          1024: {
+                              slidesPerView: 3,
                           },
-                          navigation: {
-                              nextEl: '.listing-carousel-button-next',
-                              prevEl: '.listing-carousel-button-prev',
-                          },
-                          breakpoints: {
-                              1024: {
-                                  slidesPerView: 3,
-                              },
-                              
-                          }
-                      });
-                  }
-                  
-                // bubbles -----------------
-                  
-                  
-                  setInterval(function () {
-                      var size = randomValue(sArray);
-                      $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
-                      $('.individual-bubble').animate({
-                          'bottom': '100%',
-                          'opacity': '-=0.7'
-                      }, 4000, function () {
-                          $(this).remove()
-                      });
-                  }, 350);
-                  
-                }
-                
-                //   Init All ------------------
-                $(document).ready(function () {
-                  initParadoxWay();
-                });
-                </script>
-                </div>
+                          
+                      }
+                  });
+              }
+              
+            // bubbles -----------------
+              
+              
+              setInterval(function () {
+                  var size = randomValue(sArray);
+                  $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+                  $('.individual-bubble').animate({
+                      'bottom': '100%',
+                      'opacity': '-=0.7'
+                  }, 4000, function () {
+                      $(this).remove()
+                  });
+              }, 350);
+              
+            }
+            
+            //   Init All ------------------
+            $(document).ready(function () {
+              initParadoxWay();
+            });
+            </script>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-</main>
-<footer class="footer">
-    <!-- Copyright -->
-<div class="copyright">
-    © 2024.ISKCON Bangalore, All rights reserved.
-</div>
-<!-- Join Us with Social Icons -->
-<div class="social">
-    <a href="https://www.whatsapp.com/channel/0029VaADajtIiRozhnfEuo06" class="social-icon whatsapp" style="color:#25D366;" target="_blank" >
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://www.youtube.com/@iskconbangalore" class="social-icon youtube" style="color: #FF0000;" target="_blank" >
-        <i class="fab fa-youtube"></i>
-    </a>
-    <a href="https://www.instagram.com/IskconBangaloreTemple/" class="social-icon instagram" style="color: #E1306C;" target="_blank" >
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.facebook.com/ISKCONBangaloreTemple  "class="social-icon facebook" style="color: #1877F2;" target="_blank" >
-        <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/iskcon-bangalore/" class="social-icon linkedin" style="color: #0077B5;" target="_blank" >
-        <i class="fab fa-linkedin"></i>
-    </a>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copyright -->
+    <div class="copyright">
+        © 2024.ISKCON Bangalore, All rights reserved.
+    </div>
+    <!-- Join Us with Social Icons -->
+    <div class="social">
+        <a href="https://www.whatsapp.com/channel/0029VaADajtIiRozhnfEuo06" class="social-icon whatsapp" style="color:#25D366;" target="_blank" >
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.youtube.com/@iskconbangalore" class="social-icon youtube" style="color: #FF0000;" target="_blank" >
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/IskconBangaloreTemple/" class="social-icon instagram" style="color: #E1306C;" target="_blank" >
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/ISKCONBangaloreTemple  "class="social-icon facebook" style="color: #1877F2;" target="_blank" >
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/iskcon-bangalore/" class="social-icon linkedin" style="color: #0077B5;" target="_blank" >
+            <i class="fab fa-linkedin"></i>
+        </a>
+        
+    </div>
     
-</div>
-
-
-</footer>
-
-<!-- Add the necessary Font Awesome icons -->
+    
+    </footer>
+    <!-- Add the necessary Font Awesome icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- /Footer -->
 
-<style>
-footer {
-display: flex;
-justify-content: center; /* Center the content horizontally */
-align-items: center; /* Center the content vertically */
-flex-direction: column; /* Stack the items vertically by default */
-background-color: #c0e2c9;
-color: black;
-padding: 20px;
-font-size: 18px;
-position: relative;
-bottom: 0;
-width: 100%;
-}
+    <!-- Style -->
+    <style>
+        footer {
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        flex-direction: column; /* Stack the items vertically by default */
+        background-color: #c0e2c9;
+        color: black;
+        padding: 20px;
+        font-size: 18px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        }
+        
+        .copyright {
+        margin-top: 10px; /* Space between the social section and the copyright */
+        text-align: center;
+        font-family: 'Roboto', serif;
+        font-weight: bold;
+        }
+        
+        .social {
+        display: flex;
+        flex-direction: row; /* Align social icons horizontally */
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px; /* Space between social icons and copyright */
+        }
+        
+        .social span {
+        margin-right: 10px; /* Space between "Join Us" and the first icon */
+        }
+        
+        .social-icon {
+        color: white;
+        margin: 0 10px; /* Space between social icons */
+        font-size: 20px;
+        text-decoration: none;
+        }
+        
+        .social-icon:hover {
+        color: #007bff;
+        }
+        .whatsapp {
+        font-size: 30px;
+        }
+        .youtube {
+        font-size: 30px;
+        }
+        .instagram {
+        font-size: 30px;
+        }
+        
+        .facebook {
+            font-size: 30px;
+        }
+        
+        .linkedin {
+            font-size: 30px;
+        }
+        
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+        footer {
+            flex-direction: row; /* On larger screens, display items in a row */
+            justify-content: space-between; /* Space out the copyright and social sections */
+            align-items: center; /* Align items vertically */
+        }
+        
+        .social {
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+        
+        .social span {
+            margin-right: 10px; /* Space between "Join Us" and the first icon */
+        }
+        
+        .social-icon {
+            margin: 0 10px; /* Add space between social icons */
+        }
+        }
+        
+        /* Media query for smaller screens (phones) */
+        @media (max-width: 767px) {
+        footer {
+            flex-direction: column; /* Keep items stacked vertically */
+            justify-content: flex-start; /* Align the content at the top */
+        }
+        
+        /* Move social to the top */
+        .social {
+            order: -1; /* Move social section above copyright */
+            margin-top: 0; /* Remove margin from social section */
+            margin-bottom: 10px; /* Add space between social icons and copyright */
+        }
+        
+        .copyright {
+            margin-top: 10px; /* Add more space between the social and copyright */
+            text-align: center;
+            font-size: 14px;
+        }
+        }
+        
+        </style>
+    <!-- /Style -->
 
-.copyright {
-margin-top: 10px; /* Space between the social section and the copyright */
-text-align: center;
-font-family: 'Roboto', serif;
-font-weight: bold;
-}
-
-.social {
-display: flex;
-flex-direction: row; /* Align social icons horizontally */
-align-items: center;
-justify-content: center;
-margin-bottom: 10px; /* Space between social icons and copyright */
-}
-
-.social span {
-margin-right: 10px; /* Space between "Join Us" and the first icon */
-}
-
-.social-icon {
-color: white;
-margin: 0 10px; /* Space between social icons */
-font-size: 20px;
-text-decoration: none;
-}
-
-.social-icon:hover {
-color: #007bff;
-}
-.whatsapp {
-font-size: 30px;
-}
-.youtube {
-font-size: 30px;
-}
-.instagram {
-font-size: 30px;
-}
-
-.facebook {
-    font-size: 30px;
-}
-
-.linkedin {
-    font-size: 30px;
-}
-
-/* Media query for larger screens */
-@media (min-width: 768px) {
-footer {
-    flex-direction: row; /* On larger screens, display items in a row */
-    justify-content: space-between; /* Space out the copyright and social sections */
-    align-items: center; /* Align items vertically */
-}
-
-.social {
-    margin-bottom: 0; /* Remove bottom margin */
-}
-
-.social span {
-    margin-right: 10px; /* Space between "Join Us" and the first icon */
-}
-
-.social-icon {
-    margin: 0 10px; /* Add space between social icons */
-}
-}
-
-/* Media query for smaller screens (phones) */
-@media (max-width: 767px) {
-footer {
-    flex-direction: column; /* Keep items stacked vertically */
-    justify-content: flex-start; /* Align the content at the top */
-}
-
-/* Move social to the top */
-.social {
-    order: -1; /* Move social section above copyright */
-    margin-top: 0; /* Remove margin from social section */
-    margin-bottom: 10px; /* Add space between social icons and copyright */
-}
-
-.copyright {
-    margin-top: 10px; /* Add more space between the social and copyright */
-    text-align: center;
-    font-size: 14px;
-}
-}
-
-</style>
-
-<script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault(); // Disable right-click menu
-    });
-</script>
-
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Disable right-click menu
+        });
+    </script>
+    
 </body>
 </html>
