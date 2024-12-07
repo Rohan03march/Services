@@ -6,7 +6,7 @@
     <link rel="icon" href="./assets/iskcon-fevicon.png" type="image/gif" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Source+Sans+Pro&family=Nunito&family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Source+Sans+Pro&family=Nunito&family=PT+Serif&family=Montserrat:wght@400;700&display=swap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -31,10 +31,6 @@
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: white;
-        }
         
      </style>
     <!-- /Body -->
@@ -51,10 +47,6 @@
             <!-- Other content here -->
         </div>
         
-    
-        <!-- Static Image for mobile -->
-        <img class="mobile-image" src="./assets/Images/gettyimages-1204031983-612x612.jpg" alt="Static image for mobile"> 
-    
         <!-- Logo Image positioned at the top-left -->
         <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo">
         
@@ -70,7 +62,7 @@
 var aText = new Array(
     "A scared space to flourish", 
     "Where love and grace nourish",
-    "For all ages to cherish",
+    "For all ages to cherish"
     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
@@ -142,7 +134,7 @@ var aText = new Array(
                 position: absolute;
                 top: 30px; /* Adjust as needed */
                 left: 20px; /* Adjust as needed */
-                width: 150px; /* Adjust the logo size */
+                width: 130px; /* Adjust the logo size */
                 z-index: 1; /* Ensure it's above the video */
             }
     
@@ -256,7 +248,7 @@ var aText = new Array(
 </section>
 <section>
      <!-- Featured In -->
-     <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Featured In</h1>
+     <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;color: rgba(6, 27, 65, 0.922);">Featured In</h1>
      <div class="image-divider">
         <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
     </div>
@@ -296,7 +288,6 @@ var aText = new Array(
             .logos {
                 overflow: hidden;
                 padding: 20px 0;
-                background: white;
                 white-space: nowrap;
                 position: relative;
             }
@@ -336,7 +327,7 @@ var aText = new Array(
     
       <section>
         <!-- Testimonials from Dignitaries -->
-     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold">What Dignitaries Say</h2>
+     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold;color: rgba(6, 27, 65, 0.922);">What Dignitaries Say</h2>
      <div class="image-divider">
         <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
     </div>
@@ -514,7 +505,6 @@ var aText = new Array(
          
              /* Carousel styling */
              .carousel {
-                 background: white;
                  padding: 30px;
                  width: 80%;
                  height: 350px;
@@ -553,12 +543,13 @@ var aText = new Array(
          
              .carousel-indicators li {
                  width: 10px;
-                 background: rgb(107, 81, 81);
+                 background:#C88C30;
              }
          
              .carousel-indicators li.active {
                  width: 25px;
-                 background: rgb(107, 81, 81);
+                 background: #C88C30
+                 ;
              }
          
              /* Mobile Responsiveness */
@@ -640,7 +631,7 @@ var aText = new Array(
     <section>
      <!-- Image Grid -->
      <div class="grid">
-        <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">For Children & Teens</h1>
+        <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Children & Teens</h1>
         <div class="image-divider">
             <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
         </div>
@@ -749,17 +740,6 @@ var aText = new Array(
                     padding: 20px;
                     justify-items: center;
                 }
-                .grid-container-2 {
-                    display: grid;
-                    grid-template-columns: repeat(3,1fr);
-                    gap: var(--grid-gap-vertical) var(--grid-gap-horizontal);
-                    padding: 20px;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                    justify-items: center;
-
-                }
                 .grid-item {
                     max-width: 1000px;
                     width: 95%;
@@ -791,7 +771,9 @@ var aText = new Array(
                     padding: 0px;
                     margin-top: 5px;
                     font-family: 'Lora', serif;
+                    font-weight: bold;
                     font-size: 25px;
+                    color: rgba(6, 27, 65, 0.922);
                 }
                 .info .bordered-paragraph {
                     margin-top: -20px;
@@ -828,7 +810,7 @@ var aText = new Array(
             </div>
 
             <!-- 2nd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">For Young Men and Women</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Young Men and Women</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -882,7 +864,7 @@ var aText = new Array(
                 </div>
 
             <!-- 3rd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Adults and Families</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Adults and Families</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -959,7 +941,7 @@ var aText = new Array(
                 </div>
 
             <!-- 4th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center; font-size:40px">For Contributors</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center; font-size:40px;color: rgba(6, 27, 65, 0.922);">For Contributors</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -1036,7 +1018,7 @@ var aText = new Array(
                 </div>
 
             <!-- 5th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Community Involvement</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Community Involvement</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -1113,7 +1095,7 @@ var aText = new Array(
                 </div>
 
             <!-- 6th grid-->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Dining & Spiritual Essentials</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Dining & Spiritual Essentials</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -1190,7 +1172,7 @@ var aText = new Array(
                 </div>
 
             <!-- 7th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Guests & Events</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Guests & Events</h1>
             <div class="image-divider">
                 <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
             </div>
@@ -1244,7 +1226,7 @@ var aText = new Array(
                 </div>
 
                 <!-- 9th grid -->
-                <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Spiritual Seekers</h1>
+                <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Spiritual Seekers</h1>
                 <div class="image-divider">
                     <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
                 </div>
@@ -1320,7 +1302,7 @@ var aText = new Array(
 
  <section>
  <!-- Science -->
- <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+ <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;color: rgba(6, 27, 65, 0.922);">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
  <div class="image-divider">
     <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
 </div>
@@ -1381,10 +1363,12 @@ var aText = new Array(
         object-fit: cover;
     }
     
-    p {
+   .grid-i  p {
         margin-top: 10px;
-        font-size: 14px;
-        color: #555;
+        font-size: 15px;
+        color: rgba(6, 27, 65, 0.922);
+        font-family: 'Montserrat',sans-serif;
+        font-weight: bold;
     }
     
     /* Media query for mobile screens (e.g., less than 768px wide) */
@@ -1602,8 +1586,8 @@ var aText = new Array(
                             </div>
                         </div>
                     </div>
-            
-                    <div class="tc-pagination"></div>
+<!--             
+                    <div class="tc-pagination"></div> -->
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
@@ -1623,7 +1607,7 @@ var aText = new Array(
                 float: left;
                 position: relative;
                 padding: 30px 0;
-                background: #fcfcfd;
+                background: rgba(240, 245, 244, 0.707);
                 z-index: 1;
                 width: 100%;
             }
@@ -1748,7 +1732,6 @@ width: 50px;
                 font-weight: normal;
                 text-decoration: inherit;
                 position: absolute;
-                color: #ccc;
                 opacity: .3;
                 font-size: 35px;
                 transition: all 400ms linear;
@@ -1760,7 +1743,6 @@ width: 50px;
                 font-weight: normal;
                 text-decoration: inherit;
                 position: absolute;
-                color: #ccc;
                 opacity: .3;
                 font-size: 35px;
                 transition: all 400ms linear;
@@ -1810,11 +1792,11 @@ width: 50px;
                 background: #fff;
                 box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
             }
-            .testimonials-text p{
+            .testimonials-text p ,h3{
                 color: #878c9f;
                 font-size: 14px;
-                font-family: Georgia, "Times New Roman", Times, serif;
-                font-style: italic;
+                font-family: 'Montserrat',sans-serif;
+                font-weight: bolder;
                 line-height: 24px;
                 padding-bottom: 10px;
                 font-weight: 500;
@@ -1864,7 +1846,7 @@ width: 50px;
                 transition: all 300ms ease-in-out;
             }
             </style>
-            <script>
+            <!-- <script>
               //   all ------------------
             function initParadoxWay() {
               "use strict";
@@ -1898,6 +1880,9 @@ width: 50px;
               
             // bubbles -----------------
               
+            function randomValue(arr) {
+                return arr[Math.floor(Math.random()* arr.length)]
+            }
               
               setInterval(function () {
                   var size = randomValue(sArray);
@@ -1916,7 +1901,69 @@ width: 50px;
             $(document).ready(function () {
               initParadoxWay();
             });
+            </script> -->
+            <script>
+                // Initialize all ------------------
+                function initParadoxWay() {
+                    "use strict";
+            
+                    // Testimonials carousel ------------------
+                    if ($(".testimonials-carousel").length > 0) {
+                        var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+                            preloadImages: false,
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                            loop: true,
+                            grabCursor: true,
+                            mousewheel: false,
+                            centeredSlides: true,
+                            pagination: {
+                                el: '.tc-pagination',
+                                clickable: true,
+                                dynamicBullets: true,
+                            },
+                            navigation: {
+                                nextEl: '.listing-carousel-button-next',
+                                prevEl: '.listing-carousel-button-prev',
+                            },
+                            breakpoints: {
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                            }
+                        });
+                    }
+            
+                    // Bubbles ------------------
+                    
+                    // Define sArray (bubble sizes) and bArray (bubble positions)
+                    var sArray = [20, 30, 40, 50, 60];  // Array of possible bubble sizes
+                    var bArray = [0, 100, 200, 300, 400];  // Array of possible left positions for bubbles
+            
+                    // Function to get a random value from an array
+                    function randomValue(arr) {
+                        return arr[Math.floor(Math.random() * arr.length)];
+                    }
+            
+                    // Bubble animation
+                    setInterval(function () {
+                        var size = randomValue(sArray);  // Get random size from sArray
+                        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+                        $('.individual-bubble').animate({
+                            'bottom': '100%',
+                            'opacity': '-=0.7'
+                        }, 4000, function () {
+                            $(this).remove();  // Remove bubble after animation
+                        });
+                    }, 350);  // Interval of 350ms for creating new bubbles
+                }
+            
+                // Initialize All ------------------
+                $(document).ready(function () {
+                    initParadoxWay();
+                });
             </script>
+            
             </div>
         </div>
     </div>
@@ -1975,7 +2022,7 @@ width: 50px;
         .copyright {
         margin-top: 10px; /* Space between the social section and the copyright */
         text-align: center;
-        font-family: 'Roboto', serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         }
         
