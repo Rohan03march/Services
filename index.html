@@ -46,10 +46,11 @@
     <div class="video-container">
 
         <!-- video background for desktop -->
-        <video class="background-video" autoplay loop muted>
-            <source src="./assets/video/growingtree.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video-container">
+            <img src="./assets/images/Iskon_temple-ezgif.com-webp-to-jpg-converter.jpg" alt="Background Image" class="background-image">
+            <!-- Other content here -->
+        </div>
+        
     
         <!-- Static Image for mobile -->
         <img class="mobile-image" src="./assets/Images/gettyimages-1204031983-612x612.jpg" alt="Static image for mobile"> 
@@ -69,7 +70,7 @@
 var aText = new Array(
     "A scared space to flourish", 
     "Where love and grace nourish",
-    "For all ages to cherish"
+    "For all ages to cherish",
     );
     var iSpeed = 100; // time delay of print out
     var iIndex = 0; // start printing array at this posision
@@ -116,14 +117,14 @@ var aText = new Array(
             }
     
             /* Video background for desktop */
-            .background-video {
+            .background-image {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                filter: brightness(50%); /* Dim the video for readability */
+                filter: brightness(50%); /* Dim the image for readability */
                 z-index: -1; /* Ensure it's behind the text */
             }
     
@@ -168,13 +169,13 @@ var aText = new Array(
     
             .text-overlay h1 {
                 font-family: 'Lora', serif;
-                font-size: 2.6em;
+                font-size: 4.6em;
                 font-weight: bold;
                 margin-bottom: 20px;
             }
     
             #typedtext {
-                font-size: 1.5em;
+                font-size: 1.8em;
                 font-family: 'Roboto', serif;
             }
     
@@ -209,13 +210,12 @@ var aText = new Array(
     <!-- /Header -->
 
     <!-- Main -->
-    <h1 style="color: black;text-align:center;font-family:'Lora', serif; font-size:40px" class="heading">Discover ISKCON Bangalore's programs</h1>
-
+  
+<section>
     <!-- Rounded box-->
     <div class="rounded-box">
        <p>
-          <q>Each thoughtfully crafted to offer a holistic approach to cultivating your growth, like a young sapling evolving into a strong, deeply rooted tree that bears fruit and stands resilient through life’s storms. 
-           Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, seva, volunteering, and more. Our offerings provide a nurturing space for learning, service, and personal growth, supporting your journey toward fulfillment and well-being. Explore, connect, and grow with grace!</q>
+          <q>Discover ISKCON Bangalore's programs - each thoughtfully crafted to nurture your growth, like a young sapling evolving into a strong tree that withstands life’s storms. Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, volunteering, and more. Our offerings provide a supportive space for learning, service, and personal growth, guiding you toward fulfillment and well-being. Regardless of age, every journey begins here - come, explore, and grow with us.</q>
        </p>
    
        <!-- Style for Rounded-box -->
@@ -253,9 +253,13 @@ var aText = new Array(
        <!-- /Style for Rounded-box -->
    </div>
     <!-- /Rounded Box-->
-
+</section>
+<section>
      <!-- Featured In -->
      <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Featured In</h1>
+     <div class="image-divider">
+        <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+    </div>
      <div class="logo"> 
          <div class="logos">
              <div class="logos-slide">
@@ -328,9 +332,14 @@ var aText = new Array(
      <!-- Style for logo -->
      </div>
      <!-- /Featured In -->
-      <br>
+    </section>
+    
+      <section>
         <!-- Testimonials from Dignitaries -->
-     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold">What Our Dignitaries Say</h2>
+     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold">What Dignitaries Say</h2>
+     <div class="image-divider">
+        <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+    </div>
      <div class="containers">
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
              <!-- Indicators -->
@@ -339,6 +348,11 @@ var aText = new Array(
                <li data-target="#myCarousel" data-slide-to="1"></li>
                <li data-target="#myCarousel" data-slide-to="2"></li>
                <li data-target="#myCarousel" data-slide-to="3"></li>
+               <li data-target="#myCarousel" data-slide-to="4"></li>
+               <li data-target="#myCarousel" data-slide-to="5"></li>
+               <li data-target="#myCarousel" data-slide-to="6"></li>
+               <li data-target="#myCarousel" data-slide-to="7"></li>
+               <li data-target="#myCarousel" data-slide-to="8"></li>
              </ol>
            
              <!-- Wrapper for slides -->
@@ -474,6 +488,10 @@ var aText = new Array(
                  justify-content: center;
                  height: 400px;
              }
+
+             q {
+                font-size: 20px;
+             }
              
              .imgbox img {
                  width: 100px;
@@ -498,8 +516,8 @@ var aText = new Array(
              .carousel {
                  background: white;
                  padding: 30px;
-                 width: 50%;
-                 height: 340px;
+                 width: 80%;
+                 height: 350px;
                  border-radius: 20px;
                  box-shadow: 1px 1px 30px #b1aeae;
                  position: relative;
@@ -534,12 +552,12 @@ var aText = new Array(
              }
          
              .carousel-indicators li {
-                 width: 50px;
+                 width: 10px;
                  background: rgb(107, 81, 81);
              }
          
              .carousel-indicators li.active {
-                 width: 50px;
+                 width: 25px;
                  background: rgb(107, 81, 81);
              }
          
@@ -594,7 +612,7 @@ var aText = new Array(
                  }
          
                  .carousel-indicators li {
-                     width: 30px;  /* Even smaller indicator size */
+                     width: 15px;  /* Even smaller indicator size */
                  }
              }
          </style>
@@ -603,10 +621,29 @@ var aText = new Array(
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- /Testimonials from Dignitaries -->
+    </section>
 
+    
+    <style>
+        .image-divider {
+            text-align: center;  /* Centering the image */
+            margin: 20px 0;
+        }
+
+        .image-divider img {
+            width: 100%; /* Makes the image fill the container */
+            max-width: 300px; /* Optional, controls max width */
+            height: auto;
+        }
+    </style>
+
+    <section>
      <!-- Image Grid -->
      <div class="grid">
-        <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">Children & Teens</h1>
+        <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">For Children & Teens</h1>
+        <div class="image-divider">
+            <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+        </div>
         <div class="grid-container">
             <div class="grid-item">
                 <img src="./assets/Images/Iskcon Samskriti (1).jpg" alt="Image 1">
@@ -615,18 +652,19 @@ var aText = new Array(
                     <p class="bordered-paragraph">Nurture young minds with India’s sacred traditions.
                         Help your children grow spiritually and culturally with us.</p>
                         <div class="icon-links">
-                            <a href="mailto:info@iskconsamskriti.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919379889493" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel: +91 93798 89493" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:info@iskconsamskriti.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
                             <a href="https://iskconsamskriti.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919379889493" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                 </div>
             </div>
@@ -636,18 +674,20 @@ var aText = new Array(
                     <h2>Basil Woods Institutions</h2> <br/>
                     <p class="bordered-paragraph">Offer your child a transformative education rooted in Indian values, nurturing wisdom, character, and knowledge through world-class curriculum.</p>
                     <div class="icon-links">
-                        <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                            <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                        <a href="https://api.whatsapp.com/send?phone=917846909009" target="_blank">
+                            <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                         </a>
                         <a href="tel:+91 78469 09009" target="_blank">
                             <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                         </a>
+                        <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                            <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                        </a>
+                        
                         <a href="https://basilwoods.in/" target="_blank">
                             <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=917846909009" target="_blank">
-                            <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -657,18 +697,20 @@ var aText = new Array(
                     <h2>Heritage Tours</h2> <br/>
                     <p class="bordered-paragraph">Experience guided educational tours that impart life skills through travel, offering enriching journeys for students, teachers, and parents alike.</p>
                     <div class="icon-links">
-                        <a href="mailto:info@heritagetours.in" target="_blank">
-                            <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                        <a href="https://api.whatsapp.com/send?phone=919606916268" target="_blank">
+                            <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                         </a>
                         <a href="tel:+91 96069 16268" target="_blank">
                             <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                         </a>
+                        <a href="mailto:info@heritagetours.in" target="_blank">
+                            <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                        </a>
+                        
                         <a href="https://heritagetours.in/" target="_blank">
                             <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=919606916268" target="_blank">
-                            <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                        </a>
+                       
                     </div>
                 </div>
             </div>
@@ -689,12 +731,14 @@ var aText = new Array(
                     width: 40px; /* Adjust the size of the icons */
                     height: auto;
                     transition: transform 0.3s ease, opacity 0.3s ease;
+                    filter: grayscale(100%) brightness(1); /* Initially make the icons black */
                 }
                 
                 /* Optional: Add hover effect to enlarge or change opacity */
                 .icon-links .icon-img:hover {
                     transform: scale(1.2); /* Enlarge the icon */
                     opacity: 0.8; /* Change opacity on hover */
+                    filter: grayscale(0%) brightness(1); /* Reveal original color on hover */
                 }
                 
                 
@@ -704,6 +748,17 @@ var aText = new Array(
                     gap: var(--grid-gap-vertical) var(--grid-gap-horizontal);
                     padding: 20px;
                     justify-items: center;
+                }
+                .grid-container-2 {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: var(--grid-gap-vertical) var(--grid-gap-horizontal);
+                    padding: 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    justify-items: center;
+
                 }
                 .grid-item {
                     max-width: 1000px;
@@ -723,7 +778,7 @@ var aText = new Array(
                 }
                 /* Apply zoom effect on hover */
                 .grid-item:hover img {
-                    transform: scale(1.04); /* Zooms the image by 10% */
+                    transform: scale(1.03); /* Zooms the image by 10% */
                 }
                 .info {
                     background: rgba(247, 245, 245, 0.95); /* Slightly lighter background for readability */
@@ -773,7 +828,10 @@ var aText = new Array(
             </div>
 
             <!-- 2nd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">Young Men and Women</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px">For Young Men and Women</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Folk.jpg" alt="Image 1">
@@ -781,18 +839,20 @@ var aText = new Array(
                         <h2>FOLK – Friends of Lord Krishna</h2> <br/>
                         <p class="bordered-paragraph">Empower youth with timeless wisdom and meaningful values. Be part of a community of growth and self-discovery.</p>
                         <div class="icon-links">
-                            <a href="mailto:info@folknet.in" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919341280068" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 93412 80068" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:info@folknet.in" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+
                             <a href="https://www.folknet.in/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919341280068" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -802,25 +862,30 @@ var aText = new Array(
                         <h2>Sadhika</h2> <br/>
                         <p class="bordered-paragraph">Discover a nurturing space for spiritual growth and cultural enrichment for women. Begin your journey with Sadhika today.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919742129316" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 97421 29316" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919742129316" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 </div>
 
             <!-- 3rd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">Adults and Families</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Adults and Families</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Krishna ashraya.jpg" alt="Image 1">
@@ -828,18 +893,20 @@ var aText = new Array(
                         <h2>Krishna Ashraya</h2> <br/>
                         <p class="bordered-paragraph">Deepen your spiritual connection with Krishna through inspiring courses and practices. Experience the joy of spiritual rejuvenation.</p>
                         <div class="icon-links">
-                            <a href="mailto:krishna.ashraya@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919740978663" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:krishna.ashraya@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                           
                             <a href="https://www.krishnaashraya.com/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919740978663" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -849,18 +916,20 @@ var aText = new Array(
                         <h2>Krishna Life</h2> <br/>
                         <p class="bordered-paragraph">Experience the bliss of aligning with Lord Krishna’s teachings. Join Krishna Life, now in over a dozen Bengaluru communities, and discover harmony.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919902969240" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 80-23471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.krishnalife.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919902969240" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -870,44 +939,51 @@ var aText = new Array(
                         <h2>Pilgrimage Tours</h2> <br/>
                         <p class="bordered-paragraph">Immerse yourself in sacred pilgrimages that offer deep spiritual connection and devotion. Journey with us to the Lord’s holy places.</p>
                         <div class="icon-links">
-                            <a href="mailto:iskcon.pilgrimages@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919379155555" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 93791 55555" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:iskcon.pilgrimages@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                           
                             <a href="https://pilgrimage.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919379155555" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 </div>
 
             <!-- 4th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center; font-size:40px">Contributors</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center; font-size:40px">For Contributors</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Seva Opportunities.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Seva Opportunities</h2> <br/>
+                        <h2>Donation Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Engage in selfless charity through our Life Patronship program, Festival Sevas, and more, purifying the heart and uplifting the spirit.</p>
                         <div class="icon-links">
-                            <a href="mailto:donor.care@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919379156083" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 93791 56083" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:donor.care@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                           
                             <a href="https://www.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919379156083" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                          
                         </div>
                     </div>
                 </div>
@@ -917,18 +993,20 @@ var aText = new Array(
                         <h2>Volunteering Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Offer your talents in divine service. Explore volunteering opportunities that foster personal growth and provide spiritual fulfillment.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://iskconbangalore.org/volunteer" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -938,25 +1016,30 @@ var aText = new Array(
                         <h2>Career opportunities</h2> <br/>
                         <p class="bordered-paragraph">Join a team dedicated to serving humanity through spiritual outreach. Explore fulfilling career paths with ISKCON Bangalore.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://iskconbangalore.org/careers/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 </div>
 
             <!-- 5th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">Community Involvement</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Community Involvement</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Social media community.jpg" alt="Image 1">
@@ -964,18 +1047,20 @@ var aText = new Array(
                         <h2>Social Media Community</h2> <br/>
                         <p class="bordered-paragraph">Cultivate Bhakti online and connect with Krishna anywhere. Enrich your day with spiritual content from ISKCON Bangalore’s vibrant community!</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                           
                             <a href="https://www.iskconbangalore.org/social/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -985,18 +1070,20 @@ var aText = new Array(
                         <h2>Nitya annadana</h2> <br/>
                         <p class="bordered-paragraph">Experience Nitya Annadana, offering free, nourishing prasadam daily, uplifting hearts and fostering spiritual growth.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=9108023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 08023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.iskconbangalore.org/nitya-annadana/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=9108023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1006,25 +1093,30 @@ var aText = new Array(
                         <h2>Goshala</h2> <br/>
                         <p class="bordered-paragraph">Cows are revered as mothers in Vedic tradition. Protecting them is vital for our civilization. Help us honor this sacred bond.</p>
                         <div class="icon-links">
-                            <a href="mailto:donor.care@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919379156083" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 9379156083" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:donor.care@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.iskconbangalore.org/goshala-cow-protection/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919379156083" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
                 </div>
 
             <!-- 6th grid-->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">Dining & Spiritual Essentials</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Dining & Spiritual Essentials</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Higher Taste.jpg" alt="Image 1">
@@ -1032,18 +1124,20 @@ var aText = new Array(
                         <h2>Higher Taste Restaurant</h2> <br/>
                         <p class="bordered-paragraph">Experience divine vegetarian dining at The Higher Taste in Bangalore, featuring sattvic buffets and à la carte options prepared with care!</p>
                         <div class="icon-links">
-                            <a href="mailto:support@highertaste.in" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919148415511" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 80-23575333" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:support@highertaste.in" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://iskconhighertaste.com/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919148415511" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1053,18 +1147,20 @@ var aText = new Array(
                         <h2>Goloka Seva Trust</h2> <br/>
                         <p class="bordered-paragraph">Support spiritual outreach while relishing our pure, natural incense. Every purchase uplifts both your home and heart.</p>
                         <div class="icon-links">
-                            <a href="mailto:info@golokaincense.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=916366004470" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 63660 04470" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:info@golokaincense.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.golokaonline.in/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=916366004470" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1074,25 +1170,30 @@ var aText = new Array(
                         <h2>Srila Prabhupada’s books</h2> <br/>
                         <p class="bordered-paragraph">Discover Srila Prabhupada’s timeless Vedic teachings, offering insights for overcoming anxiety and suffering. Pick one, start reading, and transform your life!</p>
                         <div class="icon-links">
-                            <a href="mailto:sales.tsfgifts@hkm-group.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:sales.tsfgifts@hkm-group.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.bhagavad-gita-as-it-is.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
                 </div>
 
             <!-- 7th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">Guests & Events</h1>
+            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Guests & Events</h1>
+            <div class="image-divider">
+                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Guest-House.jpg" alt="Image 1">
@@ -1100,18 +1201,20 @@ var aText = new Array(
                         <h2>Guest House (Yatri Nivas)</h2> <br/>
                         <p class="bordered-paragraph">Experience peaceful, spiritually enriching stays at Yatri Nivas, surrounded by the divine ambiance of ISKCON temple.</p>
                         <div class="icon-links">
-                            <a href="mailto:guest.house@hkm-group.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919342248011" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 80-23578351" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:guest.house@hkm-group.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://iskconbangalore.org/guest-house" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919342248011" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1121,25 +1224,30 @@ var aText = new Array(
                         <h2>Convention Halls</h2> <br/>
                         <p class="bordered-paragraph">Celebrate life’s special moments in ISKCON’s sacred spaces, infused with spiritual grace and care for all your events.</p>
                         <div class="icon-links">
-                            <a href="mailto:km.hkhill@hkm-group.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=919343939022" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 9343939022" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:km.hkhill@hkm-group.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://iskconbangalore.org/kalyana-mantap/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=919343939022" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
                 </div>
 
                 <!-- 9th grid -->
-                <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">Spiritual Seekers</h1>
+                <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px">For Spiritual Seekers</h1>
+                <div class="image-divider">
+                    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                </div>
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="./assets/Images/Daily Spiritual lectures.jpg" alt="Image 1">
@@ -1207,91 +1315,91 @@ var aText = new Array(
                 </div>
             </div>
     <!-- /Image Grid -->
- <br/>
+</section>
 
+
+ <section>
  <!-- Science -->
- <h1 style="font-family: 'Lora', serif;text-align:center">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
- <div class="science">
-     <div class="science-container">
-       <div class="text">
-         <p>
-             <li>Reduced stress and anxiety</li>
-             <li>Enhanced cognitive abilities</li>
-             <li>Improved emotional well-being</li>
-         </p>
-       </div>
-       <div class="image">
-         <img src="./assets/Images/break_old_patterns.svg" alt="Image Description">
-       </div>
-     </div>
-     <style>
-       .science {
-         font-family: Arial, sans-serif;
-         line-height: 1.6;
-         padding: 20px;
-       }
-   
-       .science-container {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         flex-wrap: wrap;
-         gap: 20px;
-       }
-   
-       .text {
-         flex: 1;
-         padding: 20px;
-         max-width: 500px;
-       }
-   
-       .image {
-         flex: 1;
-         max-width: 500px;
-       }
-   
-       .image img {
-         width: 100%;
-         height: auto;
-         border-radius: 10px;
-       }
-   
-       h1 {
-         font-size: 24px;
-         margin-bottom: 10px;
-         color: #333;
-       }
-   
-     li {
-         font-size: 30px;
-         color: #555;
-       }
-   
-       /* Responsive Design */
-       @media (max-width: 768px) {
-         .science-container {
-           flex-direction: column;
-           text-align: center;
-         }
+ <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+ <div class="image-divider">
+    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+</div>
+ <div class="grid-con">
+    <div class="grid-i">
+        <img src="./assets/Images/fear.png" alt="Image 1" class="circle-img">
+        <p>Stress and Anxiety Reduction</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/cognitive.png" alt="Image 2" class="circle-img">
+        <p>Enhanced Cognitive Function</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/emotional.png" alt="Image 3" class="circle-img">
+        <p>Emotional Balance</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/positivity.png" alt="Image 4" class="circle-img">
+        <p>Improved Mood and Positivity</p>
+    </div>
+</div>
+<div class="grid-con">
+    <div class="grid-i">
+        <img src="./assets/Images/self-confidence.png" alt="Image 1" class="circle-img">
+        <p>Increased Self-Awareness</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/performance.png" alt="Image 2" class="circle-img">
+        <p>Better Physical Health</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/exercise.png" alt="Image 3" class="circle-img">
+        <p>Deeper Relaxation</p>
+    </div>
+    <div class="grid-i">
+        <img src="./assets/Images/meditation.png" alt="Image 4" class="circle-img">
+        <p>Heightened Spiritual Connection</p>
+    </div>
+</div>
 
-         li {
-             font-size: 18px;
-         }
-   
-         .text {
-           max-width: 100%;
-           margin-bottom: 20px;
-         }
-   
-         .image {
-           max-width: 100%;
-           order: -1; /* Make the image appear first (on top of text) */
-         }
-       }
-   
-     </style>
-   </div>
+
+<style>
+    .grid-con {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .grid-i {
+        text-align: center;
+    }
+    
+    .circle-img {
+        width: 150px; /* Set your desired size */
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* Media query for mobile screens (e.g., less than 768px wide) */
+    @media (max-width: 768px) {
+        .grid-con {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+            padding: 0px;
+        }
+
+    }
+</style>
+
  <!-- /Science -->
+</section>
+
 
  <!-- testimonials-->
  <section style="padding-top: 30px;" id="">
@@ -1299,7 +1407,10 @@ var aText = new Array(
         <div class="row justify-content-center">
 
             <div class="col-12 text-center">
-                <h2 class="mb-4" style="font-family: 'Lora', serif;">What our Participants say about us.</h2>
+                <h2 class="mb-4" style="font-family: 'Lora', serif;">What Participants say.</h2>
+                <div class="image-divider">
+                    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                </div>
             </div>
             <div class="test">
                 <section>
@@ -1307,6 +1418,7 @@ var aText = new Array(
                 <div class="testimonials-carousel-wrap">
                     <div class="listing-carousel-button listing-carousel-button-next"></div>
                     <div class="listing-carousel-button listing-carousel-button-prev"></div>
+                   
                     <div class="testimonials-carousel">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
@@ -1315,7 +1427,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
    
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         <p>Sessions have helped me take my relationships to a whole new level. I have realised the tremendous response in my personl and professional relationships.</p>
         <a href="#" class="text-link"></a>
@@ -1323,7 +1435,7 @@ var aText = new Array(
             <h3>Sunith Tripathi <br/> ICWA, Faculty CMR Group of Institutions.</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1331,7 +1443,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
    
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
     
         <p>Very well-planned and executed trip. The accommodation was excellent, and patient and ever-smiling organizers. Special darshans were arranged, saving us time. Overall a memorable yatra. Kirtans and Bhajans en route kept us occupied.
@@ -1342,7 +1454,7 @@ var aText = new Array(
             <h3>Student</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1350,7 +1462,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
    
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
         <p>Changes your concept that satvik food is boring. They have transformed this simple cooking style into a gourmet experience. You can indulge into the dishes without guilt. Ambience is good. Staff is courteous. Making your ISKCON experience even more divine</p>
@@ -1359,7 +1471,7 @@ var aText = new Array(
             <h3>Aastha lal</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1367,7 +1479,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
    
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
         <p>Appreciate the efforts taken by the organizers and teachers in conducting this trip. Children have had a great experience with a blend of both learning and entertainment. The narration of the trip is never-ending. This shows they had a great time.</p>
@@ -1376,7 +1488,7 @@ var aText = new Array(
             <h3>Parent</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1384,7 +1496,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
     
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
         <p>After attending this workshop, I have become very conscious and conscientious about my food habits and lifestyle. These points have driven home the significance of Diet and Healthy habits which I learn as part of my medical academic course.</p>
@@ -1395,7 +1507,7 @@ var aText = new Array(
                 </h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1403,7 +1515,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
    
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
         <p>Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
@@ -1412,7 +1524,7 @@ var aText = new Array(
             <h3>Vivek, IT Professional</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1420,7 +1532,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
     
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
         <p>The Culture Camp is an excellent medium to teach our kids Vedic culture & values. My niece thoroughly enjoyed her experience & the teachers were very good in inculcating modern glass-painting and other techniques to capture the children’s attention away from the Idiot Box even after coming home.</p>
@@ -1429,7 +1541,7 @@ var aText = new Array(
             <h3>Mr. Deepak Janardhana (Team Lead, Intel)</h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
@@ -1437,7 +1549,7 @@ var aText = new Array(
 <div class="swiper-slide">
 <div class="testi-item">
   
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
         <p>The simple yet profoundly effective mantra meditation has brought a new energy to face the challenges of the professional life with renewed vigor.</p>
@@ -1448,14 +1560,14 @@ var aText = new Array(
                 </h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
 <div class="swiper-slide">
 <div class="testi-item">
   
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
         <p>Hello every one, we are the parents of Darsh Agarwal of class 4. We are extremely happy about Darsh’s improvement. This school is not focusing about Bookish knowledge but the research-based study. Not copy pasting the answers but to understand the answers. I am so happy the way courses are conducted. They way of teaching is excellent . IGCSE curriculum is advanced, more interactive, its not limited only within class. Thanks a lot.</p>
@@ -1465,14 +1577,14 @@ var aText = new Array(
                 </h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
 
 <div class="swiper-slide">
 <div class="testi-item">
   
-    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+    <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
         <p>I was truly delighted with ISKCON’s culture camp program. My son was introduced to value based education and most importantly he learnt how to treat others, how to respect others, how to love others, what is his responsibility towards family and society.</p>
@@ -1482,7 +1594,7 @@ var aText = new Array(
                 </h3>
         </div>
     </div>
-    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+    <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
 </div>
 </div>
                                 <!--testi end-->
@@ -1811,7 +1923,7 @@ width: 50px;
 </section>
 
     <!-- /Main -->
-
+     
     <!-- Footer -->
     <footer class="footer">
         <!-- Copyright -->
@@ -1952,11 +2064,11 @@ width: 50px;
         </style>
     <!-- /Style -->
 
-    <script>
+    <!-- <script>
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault(); // Disable right-click menu
         });
-    </script>
+    </script> -->
     
 </body>
 </html>
