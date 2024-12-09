@@ -793,6 +793,9 @@ var aText = new Array(
                         grid-template-columns: repeat(2, 1fr);  
                         gap: 30px;
                     }
+                    .grid-container-2 {
+                        grid-template-columns: repeat(2,1fr);
+                    }
                     .grid-item {
                         width: 100%;
                     }
@@ -800,6 +803,10 @@ var aText = new Array(
                 }
                 @media (max-width: 480px) {
                     .grid-container {
+                        grid-template-columns: 1fr;
+                        gap: 30px;
+                    }
+                    .grid-container-2 {
                         grid-template-columns: 1fr;
                         gap: 30px;
                     }
