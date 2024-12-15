@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Source+Sans+Pro&family=Nunito&family=PT+Serif&family=Montserrat:wght@400;700&display=swap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -29,6 +32,7 @@
             width: 100%;
             height: 100%;
             overflow-x: hidden; /* Prevent horizontal scrolling */
+           
         }
         
         
@@ -39,163 +43,193 @@
 <body>
     
     <!-- Header -->
-    <div class="video-container">
+    <!-- <div class="video-container"> -->
 
         <!-- video background for desktop -->
-        <div class="video-container">
-            <img src="./assets/images/Iskon_temple-ezgif.com-webp-to-jpg-converter.jpg" alt="Background Image" class="background-image">
-            <!-- Other content here -->
-        </div>
+        <!-- <div class="video-container">
+            <video src="./IB Header video.mp4" alt="Background Image" class="background-image">
+            Other content here 
+        </div> -->
         
         <!-- Logo Image positioned at the top-left -->
-        <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo">
+        <!-- <img class="logo-image-left" src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo"> -->
         
     
         <!-- Logo Image positioned at the top-right -->
-        <img class="logo-image-right" src="./assets/Images/sp logo.png" alt="Logo">
+        <!-- <img class="logo-image-right" src="./assets/Images/sp logo.png" alt="Logo"> -->
     
-        <div class="text-overlay">
-            <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
-            <div id="typedtext"></div>
-            <script>
-                // set up text to print, each item in array is new line
-var aText = new Array(
-    "A scared space to flourish", 
-    "Where love and grace nourish",
-    "For all ages to cherish"
-    );
-    var iSpeed = 100; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-     
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-     
-    function typewriter()
-    {
-     sContents =  ' ';
-     iRow = Math.max(0, iIndex-iScrollAt);
-     var destination = document.getElementById("typedtext");
-     
-     while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br />';
-     }
-     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-     if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-       iArrLength = aText[iIndex].length;
-       setTimeout("typewriter()", 500);
-      }
-     } else {
-      setTimeout("typewriter()", iSpeed);
-     }
-    }
-    
-    
-    typewriter();
-            </script>
-        </div>
+         
+        <!-- </div> -->
     
         <!-- Style -->
-        <style>
-            .video-container {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-            }
-    
-            /* Video background for desktop */
-            .background-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                filter: brightness(50%); /* Dim the image for readability */
-                z-index: -1; /* Ensure it's behind the text */
-            }
-    
-            /* Static image for mobile devices */
-            .mobile-image {
-                display: none; /* Hidden by default */
-                width: 100%;
-                height: 100vh;
-                filter: brightness(40%);
-                object-fit: cover;
-            }
-    
-            /* Logo positioned at the top-left */
-            .logo-image-left {
-                position: absolute;
-                top: 30px; /* Adjust as needed */
-                left: 20px; /* Adjust as needed */
-                width: 130px; /* Adjust the logo size */
-                z-index: 1; /* Ensure it's above the video */
-            }
-    
-            /* Logo positioned at the top-right */
-            .logo-image-right {
-                position: absolute;
-                top: 30px; /* Adjust as needed */
-                right: 20px; /* Align to the right */
-                width: 70px; /* Adjust the logo size */
-                z-index: 1; /* Ensure it's above the video */
-            }
-    
-            /* Text overlay style */
-            .text-overlay {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                color: white;
-                z-index: 1;
-            }
-    
-            .text-overlay h1 {
-                font-family: 'Lora', serif;
-                font-size: 4.6em;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-    
-            #typedtext {
-                font-size: 1.8em;
-                font-family: 'Roboto', serif;
-            }
-    
-            /* Responsive design */
-            @media only screen and (max-width: 768px) {
-                .background-video {
-                    display: none; /* Hide the video on mobile */
-                }
-    
-                .mobile-image {
-                    display: block; /* Show the image on mobile */
-                }
-    
-                .text-overlay {
-                    align-items: center;
-                    width: 90%;
-                    margin-right: 30px;
-                }
-    
-                .text-overlay h1 {
-                    font-size: 2em;
-                }
-    
-                #typedtext {
-                    font-size: 1.2em;
-                }
-            }
-        </style>
+        <!-- Video background for desktop -->
+
+
+<!-- Video background for desktop -->
+<div class="video-container">
+    <video src="./IB Header video.mp4" alt="Background Video" class="background-image" autoplay loop muted>
+        <!-- Optionally, you can add fallback content like a message or static image for unsupported browsers -->
+        Your browser does not support the video tag.
+    </video>
+    <img src="./assets/Images/Iskon_temple-ezgif.com-webp-to-jpg-converter.jpg" alt="Mobile Background Image" class="mobile-image">
+    <!-- Other content (e.g., text overlays, logos) can go here -->
+     <div class="logo-image-left">
+        <img src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo Left">
+    </div>
+    <!-- <div class="logo-image-right" id="rightl">
+        <img src="./assets/Images/sp logo.png" alt="Logo Right">
+    </div>  -->
+    <div class="text-overlay">
+        <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
+        <div id="typedtext"></div>
+         <script>
+            // set up text to print, each item in array is new line
+var aText = new Array(
+"A scared space to flourish", 
+"Where love and grace nourish",
+"For all ages to cherish"
+);
+var iSpeed = 100; // time delay of print out
+var iIndex = 0; // start printing array at this posision
+var iArrLength = aText[0].length; // the length of the text array
+var iScrollAt = 20; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 500);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+        </script> 
+</div>
+
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Video background for desktop */
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Static image for mobile devices */
+    .mobile-image {
+        display: none; /* Hidden by default */
+        width: 100%;
+        height: 100vh;
+        filter: brightness(40%);
+        object-fit: cover;
+    }
+
+    /* Logo positioned at the top-left */
+    .logo-image-left {
+        position: absolute;
+        top: 30px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        width: 130px; /* Adjust the logo size */
+        z-index: 1; /* Ensure it's above the video */
+    }
+
+    /* Logo positioned at the top-right */
+    .logo-image-right {
+        position: absolute;
+        top: 30px; /* Adjust as needed */
+        right: 20px; /* Align to the right */
+        width: 70px; /* Adjust the logo size */
+        z-index: 1; /* Ensure it's above the video */
+    }
+
+    /* Hide text-overlay on desktop (default) */
+@media only screen and (min-width: 769px) {
+    .text-overlay {
+        display: none; /* Hide text overlay on desktop */
+    }
+    .logo-image-left {
+        display: none; /* Hide left logo on desktop */
+    }
+
+}
+    /* Text overlay style */
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+
+    .text-overlay h1 {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 4.6em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #typedtext {
+        font-size: 1.8em;
+        font-family: 'Roboto', serif;
+    }
+
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+        .background-image {
+            display: none; /* Hide the video on mobile */
+        }
+
+        .mobile-image {
+            display: block; /* Show the static image on mobile */
+        }
+
+        .text-overlay {
+            align-items: center;
+            width: 90%;
+            margin-right: 30px;
+        }
+
+        .text-overlay h1 {
+            font-size: 2em;
+        }
+
+        #typedtext {
+            font-size: 1.2em;
+        }
+    }
+</style>
+
+
         <!-- /Style -->
 
     </div>
@@ -223,7 +257,7 @@ var aText = new Array(
            }
    
            .rounded-box p {
-               font-family: 'Roboto', sans-serif;
+            font-family: 'Varela Round', sans-serif;
                line-height: 1.4;
                color: #333;
                font-size: 20px;
@@ -248,9 +282,9 @@ var aText = new Array(
 </section>
 <section>
      <!-- Featured In -->
-     <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;color: rgba(6, 27, 65, 0.922);">Featured In</h1>
+     <h1 style="text-align: center;font-family: 'Fredoka', sans-serif;text-transform: uppercase; font-size:40px;color: #35718a;">Featured In</h1>
      <div class="image-divider">
-        <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+        <img src="./assets/Images/Divider element.png" alt="Image Divider">
     </div>
      <div class="logo"> 
          <div class="logos">
@@ -327,9 +361,9 @@ var aText = new Array(
     
       <section>
         <!-- Testimonials from Dignitaries -->
-     <h2 style="text-align: center;font-family:'Lora', serif;margin:0; font-size:40px;font-weight:semi-bold;color: rgba(6, 27, 65, 0.922);">What Dignitaries Say</h2>
+     <h2 style="text-align: center;font-family: 'Fredoka', sans-serif;margin:0;text-transform: uppercase; font-size:40px;font-weight:semi-bold;color: #35718a;">What Dignitaries Say</h2>
      <div class="image-divider">
-        <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+        <img src="./assets/Images/Divider element.png" alt="Image Divider">
     </div>
      <div class="containers">
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -344,6 +378,7 @@ var aText = new Array(
                <li data-target="#myCarousel" data-slide-to="6"></li>
                <li data-target="#myCarousel" data-slide-to="7"></li>
                <li data-target="#myCarousel" data-slide-to="8"></li>
+               <li data-target="#myCarousel" data-slide-to="9"></li>
              </ol>
            
              <!-- Wrapper for slides -->
@@ -353,8 +388,8 @@ var aText = new Array(
                              <img src="./assets/Images/lal-bahadur-shatri.png" alt="Los Angeles">
                      </div>
                          <div class="carousel-caption  animate__animated " >
-                         <p><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
-                         <h3 style="font-family:'Lora', serif;" >Lal Bahadur Shastri </h3>
+                         <p style="font-family: 'Varela Round', sans-serif;"><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
+                         <h3 style="font-family: 'Poppins', sans-serif;" >Lal Bahadur Shastri </h3>
                             <p style="font-size:12px">Former Prime Minister of India</p> 
  
                          </div>
@@ -365,20 +400,25 @@ var aText = new Array(
                      <img src="./assets/Images/Hopkins.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Dr. Thomas J. Hopkins </h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Dr. Thomas J. Hopkins </h3>
                     <p style="font-size:12px">Late Professor of Religion, Franklin and Marshall College</p> 
  
                  </div>
                </div>
            
+               <style>
+                 p {
+                    font-family: 'Varela Round', sans-serif;
+                 }
+               </style>
                <div class="item">
                  <div class="imgbox animate__animated  ">
                      <img src="./assets/Images/Modi.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Narendra Modi</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Narendra Modi</h3>
                     <p style="font-size:12px">Prime Minister of India</p> 
  
                  </div>
@@ -389,8 +429,8 @@ var aText = new Array(
                      <img src="./assets/Images/lata-mangeshkar.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Lata Mangeshkar</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Lata Mangeshkar</h3>
                     <p style="font-size:12px">Legendary Indian Playback Singer</p> 
  
                  </div>
@@ -401,8 +441,8 @@ var aText = new Array(
                      <img src="./assets/Images/atal-bihari-vajpayee.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Atal Bihari Vajpayee</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Atal Bihari Vajpayee</h3>
                     <p style="font-size:12px">Former Prime Minister of India</p> 
  
                  </div>
@@ -413,8 +453,8 @@ var aText = new Array(
                      <img src="./assets/Images/pranab-mukerjee.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Pranab Mukherjee</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Pranab Mukherjee</h3>
                     <p style="font-size:12px">Former President of India</p> 
  
                  </div>
@@ -425,8 +465,8 @@ var aText = new Array(
                      <img src="./assets/Images/Edward.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Dr. Edward C Dimock, Jr.</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Dr. Edward C Dimock, Jr.</h3>
                     <p style="font-size:12px">Late Professor, Department of South Asian Languages and Civilization, University of Chicago
                      </p> 
  
@@ -438,8 +478,8 @@ var aText = new Array(
                      <img src="./assets/Images/Theresa_May.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Theresa May</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Theresa May</h3>
                     <p style="font-size:12px">Former U.K. Prime Minister
                      </p> 
  
@@ -451,13 +491,26 @@ var aText = new Array(
                      <img src="./assets/Images/hema-malini.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
-                 <h3 style="font-family:'Lora', serif;" >Hema Malini</h3>
+                 <p style="font-family: 'Varela Round', sans-serif;"><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
+                 <h3 style="font-family: 'Poppins', sans-serif;" >Hema Malini</h3>
                     <p style="font-size:12px">Member of Parliament, Lok Sabha
                      </p> 
  
                  </div>
                </div>
+
+               <div class="item">
+                <div class="imgbox animate__animated  ">
+                    <img src="./assets/Images/ks-modified.png" alt="Los Angeles">
+            </div>
+            <div class="carousel-caption  animate__animated " >
+                <p style="font-family: 'Varela Round', sans-serif;"><q>I have found a sort of redemption from my usual line of thought and have been able to delve deeper into the secrets of life. Thanks to Krishna Life for opening new doors of reality to me.</q></p>
+                <h3 style="font-family: 'Poppins', sans-serif;" >Kshitij Rishi</h3>
+                   <p style="font-size:12px">Co-founder & COO, 4basecare
+                    </p> 
+
+                </div>
+              </div>
  
              </div>
            
@@ -631,9 +684,9 @@ var aText = new Array(
     <section>
      <!-- Image Grid -->
      <div class="grid">
-        <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Children & Teens</h1>
+        <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;text-transform: uppercase;margin:0;font-size:40px;color: #35718a;">For Children & Teens</h1>
         <div class="image-divider">
-            <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+            <img src="./assets/Images/Divider element.png" alt="Image Divider">
         </div>
         <div class="grid-container">
             <div class="grid-item">
@@ -778,10 +831,10 @@ var aText = new Array(
                 .info h2 {
                     padding: 0px;
                     margin-top: 5px;
-                    font-family: 'Lora', serif;
+                    font-family: 'Fredoka', sans-serif;
                     font-weight: bold;
                     font-size: 25px;
-                    color: rgba(6, 27, 65, 0.922);
+                    color:#65c6ca;
                 }
                 .info .bordered-paragraph {
                     margin-top: -20px;
@@ -825,9 +878,9 @@ var aText = new Array(
             </div>
 
             <!-- 2nd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;margin:0;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Young Men and Women</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;text-transform: uppercase;margin:0;font-size:40px;color: #35718a;">For Young Men and Women</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container-2">
                 <div class="grid-item">
@@ -879,9 +932,9 @@ var aText = new Array(
                 </div>
 
             <!-- 3rd grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Adults and Families</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-transform: uppercase;text-align:center;font-size:40px;color: #35718a;">For Adults and Families</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container">
                 <div class="grid-item">
@@ -931,7 +984,7 @@ var aText = new Array(
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="./assets/Images/Pilgrimage Tours.jpg" alt="Image 1">
+                    <img src="./assets/Images/IB pilgrimages.jpg" alt="Image 1">
                     <div class="info">
                         <h2>Pilgrimage Tours</h2> <br/>
                         <p class="bordered-paragraph">Immerse yourself in sacred pilgrimages that offer deep spiritual connection and devotion. Journey with us to the Lord’s holy places.</p>
@@ -956,13 +1009,13 @@ var aText = new Array(
                 </div>
 
             <!-- 4th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center; font-size:40px;color: rgba(6, 27, 65, 0.922);">For Contributors</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;text-transform: uppercase; font-size:40px;color: #35718a;">For Contributors</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="./assets/Images/Seva Opportunities.jpg" alt="Image 1">
+                    <img src="./assets/Images/Donation Opportunities.jpg" alt="Image 1">
                     <div class="info">
                         <h2>Donation Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Engage in selfless charity through our Life Patronship program, Festival Sevas, and more, purifying the heart and uplifting the spirit.</p>
@@ -1033,9 +1086,9 @@ var aText = new Array(
                 </div>
 
             <!-- 5th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Community Involvement</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;text-transform: uppercase;font-size:40px;color: #35718a;">For Community Involvement</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container">
                 <div class="grid-item">
@@ -1110,9 +1163,9 @@ var aText = new Array(
                 </div>
 
             <!-- 6th grid-->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Dining & Spiritual Essentials</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;text-transform: uppercase;font-size:40px;color: #35718a;">For Dining & Spiritual Essentials</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container">
                 <div class="grid-item">
@@ -1187,9 +1240,9 @@ var aText = new Array(
                 </div>
 
             <!-- 7th grid -->
-            <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Guests & Events</h1>
+            <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;font-size:40px;color: #35718a;text-transform: uppercase;">For Guests & Events</h1>
             <div class="image-divider">
-                <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                <img src="./assets/Images/Divider element.png" alt="Image Divider">
             </div>
             <div class="grid-container-2">
                 <div class="grid-item">
@@ -1241,9 +1294,9 @@ var aText = new Array(
                 </div>
 
                 <!-- 9th grid -->
-                <h1 style="font-family: 'Lora', serif;text-align:center;font-size:40px;color: rgba(6, 27, 65, 0.922);">For Spiritual Seekers</h1>
+                <h1 style="font-family: 'Fredoka', sans-serif;text-align:center;font-size:40px;color: #35718a;text-transform: uppercase;">For Spiritual Seekers</h1>
                 <div class="image-divider">
-                    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                    <img src="./assets/Images/Divider element.png" alt="Image Divider">
                 </div>
             <div class="grid-container">
                 <div class="grid-item">
@@ -1252,18 +1305,20 @@ var aText = new Array(
                         <h2>Daily Spiritual lectures</h2> <br/>
                         <p class="bordered-paragraph">ISKCON Bangalore offers daily spiritual lectures that provide profound insights into the teachings of Bhagavad Gita, Srimad Bhagavatam, and other sacred texts.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                           
                             <a href="https://www.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1273,18 +1328,20 @@ var aText = new Array(
                         <h2>Spiritual Magazines</h2> <br/>
                         <p class="bordered-paragraph">Celebrate life’s special moments in ISKCON’s sacred spaces, infused with spiritual grace and care for all your events.</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
                             <a href="https://www.krishnavoice.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
-                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
-                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1294,18 +1351,17 @@ var aText = new Array(
                         <h2>Holy Name Distribution</h2> <br/>
                         <p class="bordered-paragraph">Scriptures guide us to chant the holy names, freeing the mind from vices and fostering spiritual growth. Experience our Kirtans, Harinam Mantapa, and Chanters Club!</p>
                         <div class="icon-links">
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
-                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
-                            </a>
-                            <a href="tel:+91 8023471956" target="_blank">
-                                <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
-                            </a>
-                            <a href="https://iskconbangalore.org/activities/yuga-dharma" target="_blank">
-                                <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
-                            </a>
                             <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
+                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
+                            <a href="https://iskconbangalore.org/activities/yuga-dharma" target="_blank">
+                                <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
+                            </a>
+                           
                         </div>
                     </div>
                 </div>
@@ -1317,13 +1373,13 @@ var aText = new Array(
 
  <section>
  <!-- Science -->
- <h1 style="text-align: center;font-family: 'Lora', serif; font-size:40px;color: rgba(6, 27, 65, 0.922);">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+ <h1 style="text-align: center;font-family: 'Fredoka', sans-serif; font-size:40px;color: #35718a;text-transform: uppercase;">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
  <div class="image-divider">
-    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+    <img src="./assets/Images/Divider element.png" alt="Image Divider">
 </div>
  <div class="grid-con">
     <div class="grid-i">
-        <img src="./assets/Images/fear.png" alt="Image 1" class="circle-img">
+        <img src="./assets/Images/Stress and Anxiety Reduction.png" alt="Image 1" class="circle-img">
         <p>Stress and Anxiety Reduction</p>
     </div>
     <div class="grid-i">
@@ -1341,11 +1397,11 @@ var aText = new Array(
 </div>
 <div class="grid-con">
     <div class="grid-i">
-        <img src="./assets/Images/self-confidence.png" alt="Image 1" class="circle-img">
+        <img src="./assets/Images/self-awareness.png" alt="Image 1" class="circle-img">
         <p>Increased Self-Awareness</p>
     </div>
     <div class="grid-i">
-        <img src="./assets/Images/performance.png" alt="Image 2" class="circle-img">
+        <img src="./assets/Images/Better Physical Health.png" alt="Image 2" class="circle-img">
         <p>Better Physical Health</p>
     </div>
     <div class="grid-i">
@@ -1406,9 +1462,9 @@ var aText = new Array(
         <div class="row justify-content-center">
 
             <div class="col-12 text-center">
-                <h2 class="mb-4" style="font-family: 'Lora', serif;">What Participants say.</h2>
+                <h2 class="mb-4" style="font-family: 'Fredoka', sans-serif;text-transform: uppercase;color:#35718a">What Participants say</h2>
                 <div class="image-divider">
-                    <img src="./1684481897-flower-divider-horizontal-orange.svg" alt="Image Divider">
+                    <img src="./assets/Images/Divider element.png" alt="Image Divider">
                 </div>
             </div>
             <div class="test">
