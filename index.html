@@ -76,9 +76,6 @@
      <div class="logo-image-left">
         <img src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo Left">
     </div>
-    <!-- <div class="logo-image-right" id="rightl">
-        <img src="./assets/Images/sp logo.png" alt="Logo Right">
-    </div>  -->
     <div class="text-overlay">
         <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
         <div id="typedtext"></div>
@@ -140,6 +137,8 @@ typewriter();
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transform: scale(1); /* Slight zoom-in effect (increase value for more zoom) */
+        transform-origin: center center; /* Ensures the video zooms evenly from the center */
     }
 
     /* Static image for mobile devices */
@@ -177,7 +176,6 @@ typewriter();
     .logo-image-left {
         display: none; /* Hide left logo on desktop */
     }
-
 }
     /* Text overlay style */
     .text-overlay {
@@ -388,9 +386,9 @@ typewriter();
                              <img src="./assets/Images/lal-bahadur-shatri.png" alt="Los Angeles">
                      </div>
                          <div class="carousel-caption  animate__animated " >
-                         <p style="font-family: 'Varela Round', sans-serif;"><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
+                         <p style="font-family: 'Lora', serif;"><q>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada is doing valuable work, and his books are a significant contribution to the salvation of mankind</q></p>
                          <h3 style="font-family: 'Poppins', sans-serif;" >Lal Bahadur Shastri </h3>
-                            <p style="font-size:12px">Former Prime Minister of India</p> 
+                            <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Former Prime Minister of India</p> 
  
                          </div>
                </div>
@@ -400,9 +398,9 @@ typewriter();
                      <img src="./assets/Images/Hopkins.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>There is little question that this edition is one of the best books available on the Gita and devotion. Prabhupada's translation is an ideal blend of literal accuracy and religious insight.”</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Dr. Thomas J. Hopkins </h3>
-                    <p style="font-size:12px">Late Professor of Religion, Franklin and Marshall College</p> 
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Late Professor of Religion, Franklin and Marshall College</p> 
  
                  </div>
                </div>
@@ -417,9 +415,9 @@ typewriter();
                      <img src="./assets/Images/Modi.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>ISKCON's story has been the story of the determination and devotion of lakhs of devotees spread across the world. Inspired by the teachings of Lord Krishna</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Narendra Modi</h3>
-                    <p style="font-size:12px">Prime Minister of India</p> 
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Prime Minister of India</p> 
  
                  </div>
                </div>
@@ -429,9 +427,9 @@ typewriter();
                      <img src="./assets/Images/lata-mangeshkar.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>As an artist, I am most grateful for Srila Prabhupada's efforts toward bringing about a religious cultural revival of Indian classical arts in all parts of the world.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Lata Mangeshkar</h3>
-                    <p style="font-size:12px">Legendary Indian Playback Singer</p> 
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Legendary Indian Playback Singer</p> 
  
                  </div>
                </div>
@@ -441,9 +439,9 @@ typewriter();
                      <img src="./assets/Images/atal-bihari-vajpayee.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>If today the Bhagavad-gita is printed in millions of copies in scores of Indian languages and distributed in all nooks and corners of the world, the credit for this great sacred service goes chiefly to ISKCON.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Atal Bihari Vajpayee</h3>
-                    <p style="font-size:12px">Former Prime Minister of India</p> 
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Former Prime Minister of India</p> 
  
                  </div>
                </div>
@@ -453,9 +451,9 @@ typewriter();
                      <img src="./assets/Images/pranab-mukerjee.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>ISKCON has over the years played an important role in popularizing the noble and eternal message of the Srimad Bhagavad Gita and promoting spiritual harmony.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Pranab Mukherjee</h3>
-                    <p style="font-size:12px">Former President of India</p> 
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Former President of India</p> 
  
                  </div>
                </div>
@@ -465,9 +463,9 @@ typewriter();
                      <img src="./assets/Images/Edward.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>The increasing numbers of Western readers interested in classical Vedic thought have been done a service by Swami Bhaktivedanta.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Dr. Edward C Dimock, Jr.</h3>
-                    <p style="font-size:12px">Late Professor, Department of South Asian Languages and Civilization, University of Chicago
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Late Professor, Department of South Asian Languages and Civilization, University of Chicago
                      </p> 
  
                  </div>
@@ -478,9 +476,9 @@ typewriter();
                      <img src="./assets/Images/Theresa_May.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>For fifty years since its foundation by A.C. Bhaktivedanta Swami Prabhupada, the men and women behind ISKCON have dedicated their lives to the words of Lord Krishna to achieve peace and unity.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Theresa May</h3>
-                    <p style="font-size:12px">Former U.K. Prime Minister
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Former U.K. Prime Minister
                      </p> 
  
                  </div>
@@ -491,9 +489,9 @@ typewriter();
                      <img src="./assets/Images/hema-malini.png" alt="Los Angeles">
              </div>
              <div class="carousel-caption  animate__animated " >
-                 <p style="font-family: 'Varela Round', sans-serif;"><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
+                 <p style="font-family: 'Lora', serif;"><q>Be it their magnificent temples, divine prasadam, quality restaurants, spiritual literature, or their enthralling kirtans and the beaming, effulgent countenance of its devotees, ISKCON is rendering yeoman service to society.</q></p>
                  <h3 style="font-family: 'Poppins', sans-serif;" >Hema Malini</h3>
-                    <p style="font-size:12px">Member of Parliament, Lok Sabha
+                    <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Member of Parliament, Lok Sabha
                      </p> 
  
                  </div>
@@ -504,9 +502,9 @@ typewriter();
                     <img src="./assets/Images/ks-modified.png" alt="Los Angeles">
             </div>
             <div class="carousel-caption  animate__animated " >
-                <p style="font-family: 'Varela Round', sans-serif;"><q>I have found a sort of redemption from my usual line of thought and have been able to delve deeper into the secrets of life. Thanks to Krishna Life for opening new doors of reality to me.</q></p>
+                <p style="font-family: 'Lora', serif;"><q>I have found a sort of redemption from my usual line of thought and have been able to delve deeper into the secrets of life. Thanks to Krishna Life for opening new doors of reality to me.</q></p>
                 <h3 style="font-family: 'Poppins', sans-serif;" >Kshitij Rishi</h3>
-                   <p style="font-size:12px">Co-founder & COO, 4basecare
+                   <p style="font-size:12px;font-family: 'Poppins', sans-serif;">Co-founder & COO, 4basecare
                     </p> 
 
                 </div>
@@ -1484,10 +1482,10 @@ typewriter();
    
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
-        <p>Sessions have helped me take my relationships to a whole new level. I have realised the tremendous response in my personl and professional relationships.</p>
+        <p style="font-family: 'Lora', serif;">Sessions have helped me take my relationships to a whole new level. I have realised the tremendous response in my personl and professional relationships.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Sunith Tripathi <br/> ICWA, Faculty CMR Group of Institutions.</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Sunith Tripathi <br/> ICWA, Faculty CMR Group of Institutions.</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1501,12 +1499,12 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
     
-        <p>Very well-planned and executed trip. The accommodation was excellent, and patient and ever-smiling organizers. Special darshans were arranged, saving us time. Overall a memorable yatra. Kirtans and Bhajans en route kept us occupied.
+        <p style="font-family: 'Lora', serif;">Very well-planned and executed trip. The accommodation was excellent, and patient and ever-smiling organizers. Special darshans were arranged, saving us time. Overall a memorable yatra. Kirtans and Bhajans en route kept us occupied.
             Hare Krishna!
             </p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Student</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Student</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1520,10 +1518,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
-        <p>Changes your concept that satvik food is boring. They have transformed this simple cooking style into a gourmet experience. You can indulge into the dishes without guilt. Ambience is good. Staff is courteous. Making your ISKCON experience even more divine</p>
+        <p style="font-family: 'Lora', serif;">Changes your concept that satvik food is boring. They have transformed this simple cooking style into a gourmet experience. You can indulge into the dishes without guilt. Ambience is good. Staff is courteous. Making your ISKCON experience even more divine</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Aastha lal</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Aastha lal</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1537,10 +1535,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
-        <p>Appreciate the efforts taken by the organizers and teachers in conducting this trip. Children have had a great experience with a blend of both learning and entertainment. The narration of the trip is never-ending. This shows they had a great time.</p>
+        <p style="font-family: 'Lora', serif;">Appreciate the efforts taken by the organizers and teachers in conducting this trip. Children have had a great experience with a blend of both learning and entertainment. The narration of the trip is never-ending. This shows they had a great time.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Parent</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Parent</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1554,10 +1552,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
-        <p>After attending this workshop, I have become very conscious and conscientious about my food habits and lifestyle. These points have driven home the significance of Diet and Healthy habits which I learn as part of my medical academic course.</p>
+        <p style="font-family: 'Lora', serif;">After attending this workshop, I have become very conscious and conscientious about my food habits and lifestyle. These points have driven home the significance of Diet and Healthy habits which I learn as part of my medical academic course.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Dr. Vivekananda Bhat <br/>
+            <h3 style="font-family: 'Poppins', sans-serif;">Dr. Vivekananda Bhat <br/>
                 MBBS, MD
                 </h3>
         </div>
@@ -1573,10 +1571,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
-        <p>Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
+        <p style="font-family: 'Lora', serif;">Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Vivek, IT Professional</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Vivek, IT Professional</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1590,10 +1588,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
-        <p>The Culture Camp is an excellent medium to teach our kids Vedic culture & values. My niece thoroughly enjoyed her experience & the teachers were very good in inculcating modern glass-painting and other techniques to capture the children’s attention away from the Idiot Box even after coming home.</p>
+        <p style="font-family: 'Lora', serif;">The Culture Camp is an excellent medium to teach our kids Vedic culture & values. My niece thoroughly enjoyed her experience & the teachers were very good in inculcating modern glass-painting and other techniques to capture the children’s attention away from the Idiot Box even after coming home.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Mr. Deepak Janardhana (Team Lead, Intel)</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Mr. Deepak Janardhana (Team Lead, Intel)</h3>
         </div>
     </div>
     <div class="testimonials-text-after"><i class="fa fa-quote-right"></i></div> 
@@ -1607,10 +1605,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
-        <p>The simple yet profoundly effective mantra meditation has brought a new energy to face the challenges of the professional life with renewed vigor.</p>
+        <p style="font-family: 'Lora', serif;">The simple yet profoundly effective mantra meditation has brought a new energy to face the challenges of the professional life with renewed vigor.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Shubham Fitkariwala <br/>
+            <h3 style="font-family: 'Poppins', sans-serif;">Shubham Fitkariwala <br/>
                 CA, KPMG
                 </h3>
         </div>
@@ -1625,10 +1623,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
-        <p>Hello every one, we are the parents of Darsh Agarwal of class 4. We are extremely happy about Darsh’s improvement. This school is not focusing about Bookish knowledge but the research-based study. Not copy pasting the answers but to understand the answers. I am so happy the way courses are conducted. They way of teaching is excellent . IGCSE curriculum is advanced, more interactive, its not limited only within class. Thanks a lot.</p>
+        <p style="font-family: 'Lora', serif;">Hello every one, we are the parents of Darsh Agarwal of class 4. We are extremely happy about Darsh’s improvement. This school is not focusing about Bookish knowledge but the research-based study. Not copy pasting the answers but to understand the answers. I am so happy the way courses are conducted. They way of teaching is excellent . IGCSE curriculum is advanced, more interactive, its not limited only within class. Thanks a lot.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Darsh Agarwal (Class 4)
+            <h3 style="font-family: 'Poppins', sans-serif;">Darsh Agarwal (Class 4)
                 </h3>
         </div>
     </div>
@@ -1642,10 +1640,10 @@ typewriter();
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
         
-        <p>I was truly delighted with ISKCON’s culture camp program. My son was introduced to value based education and most importantly he learnt how to treat others, how to respect others, how to love others, what is his responsibility towards family and society.</p>
+        <p style="font-family: 'Lora', serif;">I was truly delighted with ISKCON’s culture camp program. My son was introduced to value based education and most importantly he learnt how to treat others, how to respect others, how to love others, what is his responsibility towards family and society.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
-            <h3>Ms. Samita Swain (Senior Software Developer, Dell)
+            <h3 style="font-family: 'Poppins', sans-serif;">Ms. Samita Swain (Senior Software Developer, Dell)
                 </h3>
         </div>
     </div>
@@ -1653,12 +1651,15 @@ typewriter();
 </div>
 </div>
                                 <!--testi end-->
-            
+                                
                             </div>
+                           
                         </div>
+                        <div class="tc-pagination"></div>
                     </div>
-<!--             
-                    <div class="tc-pagination"></div> -->
+                    
+            
+                   
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
@@ -1890,9 +1891,19 @@ width: 50px;
             }
             .tc-pagination{
                 float: left;
-                margin-top: 10px;
+                margin-top: -20px;
                 width: 100% !important;
+                margin-left: 490px;
             }
+            @media (max-width: 768px) {
+                .tc-pagination {
+                  float: left;
+                  margin-top: -20px;
+                  width: 100% !important;
+                  margin-left: 120px; /* Adjust margin for smaller screens */
+                }
+              }
+              
             .tc-pagination_wrap {
                 position: absolute;
                 bottom: -40px;
@@ -2045,7 +2056,7 @@ width: 50px;
     <!-- Footer -->
     <footer class="footer">
         <!-- Copyright -->
-    <div class="copyright">
+    <div class="copyright" style="font-family: 'Fredoka', sans-serif;">
         © 2024.ISKCON Bangalore, All rights reserved.
     </div>
     <!-- Join Us with Social Icons -->
