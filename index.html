@@ -32,6 +32,7 @@
             width: 100%;
             height: 100%;
             overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: #DBD5CE;
         }
         
         
@@ -70,56 +71,8 @@
         <!-- Optionally, you can add fallback content like a message or static image for unsupported browsers -->
         Your browser does not support the video tag.
     </video>
-    <img src="./assets/Images/Iskon_temple-ezgif.com-webp-to-jpg-converter.jpg" alt="Mobile Background Image" class="mobile-image">
-    <!-- Other content (e.g., text overlays, logos) can go here -->
-     <div class="logo-image-left">
-        <img src="./assets/Images/iskcon-bangalore-logo-n.png" alt="Logo Left">
-    </div>
-    <div class="text-overlay">
-        <h1 style="color: white;">Welcome to <br/> ISKCON Bangalore</h1>
-        <div id="typedtext"></div>
-         <script>
-            // set up text to print, each item in array is new line
-var aText = new Array(
-"A scared space to flourish", 
-"Where love and grace nourish",
-"For all ages to cherish"
-);
-var iSpeed = 100; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function typewriter()
-{
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
-
-
-typewriter();
-        </script> 
-</div>
+    <img src="./assets/Images/IBPhone.jpg" alt="Mobile Background Image" class="mobile-image">
+  
 
 <style>
     .video-container {
@@ -144,60 +97,11 @@ typewriter();
     .mobile-image {
         display: none; /* Hidden by default */
         width: 100%;
-        height: 100vh;
-        filter: brightness(40%);
-        object-fit: cover;
-    }
-
-    /* Logo positioned at the top-left */
-    .logo-image-left {
-        position: absolute;
-        top: 30px; /* Adjust as needed */
-        left: 20px; /* Adjust as needed */
-        width: 130px; /* Adjust the logo size */
-        z-index: 1; /* Ensure it's above the video */
-    }
-
-    /* Logo positioned at the top-right */
-    .logo-image-right {
-        position: absolute;
-        top: 30px; /* Adjust as needed */
-        right: 20px; /* Align to the right */
-        width: 70px; /* Adjust the logo size */
-        z-index: 1; /* Ensure it's above the video */
-    }
-
-    /* Hide text-overlay on desktop (default) */
-@media only screen and (min-width: 769px) {
-    .text-overlay {
-        display: none; /* Hide text overlay on desktop */
-    }
-    .logo-image-left {
-        display: none; /* Hide left logo on desktop */
-    }
-}
-    /* Text overlay style */
-    .text-overlay {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        z-index: 1;
-    }
-
-    .text-overlay h1 {
-        font-family: 'Fredoka', sans-serif;
-        font-size: 4.6em;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    #typedtext {
-        font-size: 1.8em;
-        font-family: 'Roboto', serif;
+        height: auto;
+        max-height: 100vh;
+        object-fit: contain;
+        object-position: center center;
+        filter: none;
     }
 
     /* Responsive design */
@@ -208,20 +112,15 @@ typewriter();
 
         .mobile-image {
             display: block; /* Show the static image on mobile */
+            filter: none; /* Remove dullness effect */
+            object-position: center center;
+            object-fit: contain;
+            max-height: 100vh;
+            height: auto;
+            width: 100%;
         }
-
-        .text-overlay {
-            align-items: center;
-            width: 90%;
-            margin-right: 30px;
-        }
-
-        .text-overlay h1 {
-            font-size: 2em;
-        }
-
-        #typedtext {
-            font-size: 1.2em;
+        .video-container {
+            height: auto;
         }
     }
 </style>
@@ -362,6 +261,7 @@ typewriter();
      <div class="image-divider">
         <img src="./assets/Images/Divider element.png" alt="Image Divider">
     </div>
+    <br/>
      <div class="containers">
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
              <!-- Indicators -->
@@ -652,8 +552,6 @@ typewriter();
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- /Testimonials from Dignitaries -->
     </section>
-
-    
     <style>
         .image-divider {
             text-align: center;  /* Centering the image */
@@ -666,6 +564,13 @@ typewriter();
             height: auto;
         }
     </style>
+                                        <style>
+                                            section {
+                                                margin-bottom:30px;
+                                                padding:20px
+                                                
+                                            }
+                                        </style>
     <section>
         <!-- Testimonials from Dignitaries -->
      <h2 style="text-align: center;font-family: 'Fredoka', sans-serif;margin:0;text-transform: uppercase; font-size:40px;font-weight:semi-bold;color: #35718a;">Our offering</h2>
