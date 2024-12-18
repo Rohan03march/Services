@@ -71,62 +71,58 @@
         <!-- Optionally, you can add fallback content like a message or static image for unsupported browsers -->
         Your browser does not support the video tag.
     </video>
-    <img src="./assets/Images/IBPhone.jpg" alt="Mobile Background Image" class="mobile-image">
-  
+    <img src="https://media.giphy.com/media/xT0xezY13e7iAZ7nq8/giphy.gif" alt="Mobile Background Image" class="mobile-image">
 
-<style>
-    .video-container {
-        position: relative;
-        width: 100%;
-        height: 108vh;
-    }
-
-    /* Video background for desktop */
-    .background-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: scale(1); /* Slight zoom-in effect (increase value for more zoom) */
-        transform-origin: center center; /* Ensures the video zooms evenly from the center */
-    }
-
-    /* Static image for mobile devices */
-    .mobile-image {
-        display: none; /* Hidden by default */
-        width: 100%;
-        height: auto;
-        max-height: 100vh;
-        filter: none;
-    }
-
-    /* Responsive design */
-    @media only screen and (max-width: 768px) {
-        .background-image {
-            display: none; /* Hide the video on mobile */
-        }
-
-        .mobile-image {
-            display: block; /* Show the static image on mobile */
-            filter: none; /* Remove dullness effect */
-            max-height: 100vh;
-            height: auto;
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-        }
+    <style>
         .video-container {
-            height: auto;
+            position: relative;
+            width: 100%;
+            height: 108vh;
         }
-    }
-</style>
 
+        /* Video background for desktop */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1); /* Slight zoom-in effect (increase value for more zoom) */
+            transform-origin: center center; /* Ensures the video zooms evenly from the center */
+        }
 
-        <!-- /Style -->
+        /* Static image for mobile devices */
+        .mobile-image {
+            display: none; /* Hidden by default */
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            filter: none;
+        }
 
-    </div>
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
+            .background-image {
+                display: none; /* Hide the video on mobile */
+            }
+
+            .mobile-image {
+                display: block; /* Show the GIF on mobile */
+                filter: none; /* Remove dullness effect */
+                max-height: 100vh;
+                height: auto;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .video-container {
+                height: auto;
+            }
+        }
+    </style>
+</div>
+
     <!-- /Header -->
 
     <!-- Main -->
