@@ -33,6 +33,7 @@
             height: 100%;
             overflow-x: hidden; /* Prevent horizontal scrolling */
             background-color: #DBD5CE;
+            scroll-behavior: smooth;
         }
         
         
@@ -66,7 +67,7 @@
 
 
 <!-- Video background for desktop -->
-<div class="video-container">
+<div class="video-container" id="video-con">
     <video src="./IB Services Header video.mp4" alt="Background Video" class="background-image" autoplay loop muted>
         <!-- Optionally, you can add fallback content like a message or static image for unsupported browsers -->
         Your browser does not support the video tag.
@@ -149,7 +150,7 @@
            .rounded-box p {
             font-family: 'Varela Round', sans-serif;
                line-height: 1.4;
-               color: #C88C30;
+               color: #ffd26b;
                font-size: 20px;
                text-align: center;
                position: relative;
@@ -545,6 +546,22 @@
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- /Testimonials from Dignitaries -->
+     <script>
+        $(document).ready(function(){
+          // When a user taps on a carousel item
+          $('#myCarousel .item').on('touchstart', function () {
+            // Pause the carousel when a touch is detected
+            $('#myCarousel').carousel('pause');
+          });
+      
+          // Optionally, resume the carousel after the touch ends
+          $('#myCarousel .item').on('touchend', function () {
+            // You can uncomment the next line if you want the carousel to resume after the touch ends.
+            // $('#myCarousel').carousel('cycle');
+          });
+        });
+      </script>
+      
     </section>
     <style>
         .image-divider {
@@ -567,7 +584,7 @@
                                         </style>
     <section>
         <!-- Testimonials from Dignitaries -->
-     <h2 style="text-align: center;font-family: 'Fredoka', sans-serif;margin:0;text-transform: uppercase; font-size:40px;font-weight:semi-bold;color: #35718a;">Our offering</h2>
+     <h2 style="text-align: center;font-family: 'Fredoka', sans-serif;margin:0;text-transform: uppercase; font-size:40px;font-weight:semi-bold;color: #35718a;">Our Offerings</h2>
      <div class="image-divider">
         <img src="./assets/Images/Divider element.png" alt="Image Divider">
     </div>
@@ -656,7 +673,7 @@
              @media (max-width: 768px) {
                  .carousel {
                      width: 80%;  /* Adjust the carousel width for smaller screens */
-                     height: auto; /* Let height adjust automatically */
+                     height: 45vh; /* Let height adjust automatically */
                      padding: 20px;  /* Reduce padding */
                  }
                  
@@ -1099,7 +1116,7 @@
                 <div class="grid-item">
                     <img src="./assets/Images/Career Opportunities.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Career opportunities</h2> <br/>
+                        <h2>Career Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Join a team dedicated to serving humanity through spiritual outreach. Explore fulfilling career paths with ISKCON Bangalore.</p>
                         <div class="icon-links">
                             <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
@@ -1153,7 +1170,7 @@
                 <div class="grid-item">
                     <img src="./assets/Images/Nitya Annadana.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Nitya annadana</h2> <br/>
+                        <h2>Nitya Annadana</h2> <br/>
                         <p class="bordered-paragraph">Experience Nitya Annadana, offering free, nourishing prasadam daily, uplifting hearts and fostering spiritual growth.</p>
                         <div class="icon-links">
                             <a href="https://api.whatsapp.com/send?phone=9108023471956" target="_blank">
@@ -1253,7 +1270,7 @@
                 <div class="grid-item">
                     <img src="./assets/Images/Srila Prabhupada’s books.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Srila Prabhupada’s books</h2> <br/>
+                        <h2>Srila Prabhupada’s Books</h2> <br/>
                         <p class="bordered-paragraph">Discover Srila Prabhupada’s timeless Vedic teachings, offering insights for overcoming anxiety and suffering. Pick one, start reading, and transform your life!</p>
                         <div class="icon-links">
                             <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
@@ -1338,7 +1355,7 @@
                 <div class="grid-item">
                     <img src="./assets/Images/Daily Spiritual lectures.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Daily Spiritual lectures</h2> <br/>
+                        <h2>Daily Spiritual Lectures</h2> <br/>
                         <p class="bordered-paragraph">ISKCON Bangalore offers daily spiritual lectures that provide profound insights into the teachings of Bhagavad Gita, Srimad Bhagavatam, and other sacred texts.</p>
                         <div class="icon-links">
                             <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
@@ -1613,7 +1630,7 @@
     <div class="testimonials-text-before"><i class="fa fa-quote-left"></i></div>
     <div class="testimonials-text">
        
-        <p style="font-family: 'Lora', serif;">Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omiited by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
+        <p style="font-family: 'Lora', serif;">Another aspect that sets ISKCON Pilgrimages apart from other routine tour operators is that we are shown smaller places along the route having significant philosophical and mythological significance which are completely omitted by others. This is a unique experience which has made me to decide to be part of future pilgrimages only with ISKCON.</p>
         <a href="#" class="text-link"></a>
         <div class="testimonials-avatar">
             <h4 style="font-family: 'Poppins', sans-serif;">Vivek, IT Professional</h4>
@@ -1911,10 +1928,10 @@ width: 50px;
                 font-size: 18px;
             }
             .testimonials-avatar h4{
-                 font-weight:400;
+                 font-weight:bold;
                  font-size:12px;
                  padding-top:6px;
-                 color:#007aff;
+                 color:black;
             }
             .testimonials-carousel .swiper-slide{
                 padding: 30px 0;
@@ -2124,6 +2141,7 @@ width: 50px;
             
             </div>
         </div>
+      
     </div>
 </section>
 
@@ -2168,8 +2186,8 @@ width: 50px;
         justify-content: center; /* Center the content horizontally */
         align-items: center; /* Center the content vertically */
         flex-direction: column; /* Stack the items vertically by default */
-        background-color: #c0e2c9;
-        color: black;
+        background-color: #35718a ;
+        color: #ffd26b;
         padding: 20px;
         font-size: 18px;
         position: relative;
@@ -2266,6 +2284,8 @@ width: 50px;
         }
         
         </style>
+      
+      
     <!-- /Style -->
 
     <!-- <script>
