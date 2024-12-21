@@ -546,21 +546,7 @@
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      <!-- /Testimonials from Dignitaries -->
-     <script>
-        $(document).ready(function(){
-          // When a user taps on a carousel item
-          $('#myCarousel .item').on('touchstart', function () {
-            // Pause the carousel when a touch is detected
-            $('#myCarousel').carousel('pause');
-          });
-      
-          // Optionally, resume the carousel after the touch ends
-          $('#myCarousel .item').on('touchend', function () {
-            // You can uncomment the next line if you want the carousel to resume after the touch ends.
-            // $('#myCarousel').carousel('cycle');
-          });
-        });
-      </script>
+    
       
     </section>
     <style>
@@ -673,7 +659,7 @@
              @media (max-width: 768px) {
                  .carousel {
                      width: 80%;  /* Adjust the carousel width for smaller screens */
-                     height: 65vh; /* Let height adjust automatically */
+                     height: auto ; /* Let height adjust automatically */
                      padding: 20px;  /* Reduce padding */
                  }
                  
@@ -1751,7 +1737,43 @@
                         <div class="tc-pagination"></div>
                     </div>
                     
-            
+                    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑</button>
+                    <style>
+                        #backToTopBtn {
+                            position: fixed;
+                            bottom: 20px;
+                            right: 20px;
+                            background-color: #35718a;
+                            color: white;
+                            border: none;
+                            border-radius: 60px;
+                            padding: 15px;
+                            cursor: pointer;
+                            font-size: 18px;
+                        
+                        }
+                        #backToTopBtn :hover {
+                            background-color: #357183;
+                        }
+                    </style>
+                    <script>
+                        let mybutton = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+// When the user clicks the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+                    </script>
                    
                 </div>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
