@@ -132,7 +132,7 @@
     <!-- Rounded box-->
     <div class="rounded-box">
        <p>
-          Discover ISKCON Bangalore's programs - each thoughtfully crafted to nurture your growth, like a young sapling evolving into a strong tree that withstands life’s storms. <br/> <br/> Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, volunteering, and more. Our offerings provide a supportive space for learning, service, and personal growth, guiding you toward fulfillment and well-being. Regardless of age, every journey begins here - come, explore, and grow with us.
+          Discover <b> ISKCON Bangalore's programs</b> - each thoughtfully crafted to nurture your growth, like a young sapling evolving into a strong tree that withstands life’s storms. <br/> <br/> Connect with India’s spiritual and cultural heritage through youth empowerment, cultural education, volunteering, and more. Our offerings provide a supportive space for learning, service, and personal growth, guiding you toward fulfillment and well-being. Regardless of age, every journey begins here - come, explore, and grow with us.
        </p>
    
        <!-- Style for Rounded-box -->
@@ -249,6 +249,91 @@
      </div>
      <!-- /Featured In -->
     </section>
+
+    <section>
+        <!-- Science -->
+        <h1 style="text-align: center;font-family: 'Fredoka', sans-serif; font-size:40px;color: #35718a;text-transform: uppercase;">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
+        <div class="image-divider">
+           <img src="./assets/Images/Divider element.png" alt="Image Divider">
+       </div>
+       <br/>
+        <div class="grid-con">
+           <div class="grid-i">
+               <img src="./assets/Images/Stress & Anxiety Reduction.png" alt="Image 1" class="circle-img">
+               <p>Stress and Anxiety Reduction</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/cognitive.png" alt="Image 2" class="circle-img">
+               <p>Enhanced Cognitive Function</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/emotional.png" alt="Image 3" class="circle-img">
+               <p>Emotional Balance</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/positivity.png" alt="Image 4" class="circle-img">
+               <p>Improved Mood and Positivity</p>
+           </div>
+       </div>
+       <div class="grid-con">
+           <div class="grid-i">
+               <img src="./assets/Images/self-awareness.png" alt="Image 1" class="circle-img">
+               <p>Increased Self-Awareness</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/Better Physical Health.png" alt="Image 2" class="circle-img">
+               <p>Better Physical Health</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/exercise.png" alt="Image 3" class="circle-img">
+               <p>Deeper Relaxation</p>
+           </div>
+           <div class="grid-i">
+               <img src="./assets/Images/Heightened Spiritual Connection.png" alt="Image 4" class="circle-img">
+               <p>Heightened Spiritual Connection</p>
+           </div>
+       </div>
+       
+       
+       <style>
+           .grid-con {
+               display: grid;
+               grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+               gap: 20px;
+               max-width: 1000px;
+               margin: 0 auto;
+           }
+           
+           .grid-i {
+               text-align: center;
+           }
+           
+           .circle-img {
+               width: 150px; /* Set your desired size */
+               height: 150px;
+               object-fit: cover;
+           }
+           
+          .grid-i  p {
+               margin-top: 10px;
+               font-size: 15px;
+               color: rgba(6, 27, 65, 0.922);
+               font-family: 'Montserrat',sans-serif;
+               font-weight: bold;
+           }
+           
+           /* Media query for mobile screens (e.g., less than 768px wide) */
+           @media (max-width: 768px) {
+               .grid-con {
+                   grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+                   padding: 0px;
+               }
+       
+           }
+       </style>
+       
+        <!-- /Science -->
+       </section>
     
       <section>
         <!-- Testimonials from Dignitaries -->
@@ -760,7 +845,7 @@
                         <a href="tel:+91 78469 09009" target="_blank">
                             <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                         </a>
-                        <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                        <a href="mailto:info@basilwoodsinternational.in" target="_blank">
                             <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                         </a>
                         
@@ -838,6 +923,7 @@
                     padding: 20px;
                     justify-items: center;
                 } 
+                
                 .grid-item {
                     max-width: 1000px;
                     width: 95%;
@@ -848,6 +934,17 @@
                     border: 1px solid #f1f1f1;
                     background-color: rgba(247,245,245,0.95);
                 }
+                .grid-item-2 {
+                    max-width: 1000px;
+                    width: 95%;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+                    border: 1px solid #f1f1f1;
+                    background-color: rgba(247,245,245,0.95);
+                    margin-top: 30px;
+                }
 
                 .grid-item img {
                     width: 100%;
@@ -855,8 +952,17 @@
                     height: auto;
                     border-radius: 12px;
                 }
+                .grid-item-2 img {
+                    width: 100%;
+                    transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+                    height: auto;
+                    border-radius: 12px;
+                }
                 /* Apply zoom effect on hover */
                 .grid-item:hover img {
+                    transform: scale(1.03); /* Zooms the image by 10% */
+                }
+                .grid-item-2:hover img {
                     transform: scale(1.03); /* Zooms the image by 10% */
                 }
                 .info {
@@ -887,7 +993,11 @@
                     .grid-container-2 {
                         grid-template-columns: repeat(2,1fr);
                     }
+                    
                     .grid-item {
+                        width: 100%;
+                    }
+                    .grid-item-2 {
                         width: 100%;
                     }
                     
@@ -903,6 +1013,10 @@
                     }
                     .grid-item {
                         width: 100%;
+                    }
+                    .grid-item-2 {
+                        width: 100%;
+                        margin-top: -45px;
                     }
                 }
                 .header-text {
@@ -985,7 +1099,7 @@
                             <a href="https://api.whatsapp.com/send?phone=919740978663" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 8023471956" target="_blank">
+                            <a href="tel:+91-9740978663 " target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
                             <a href="mailto:krishna.ashraya@iskconbangalore.org" target="_blank">
@@ -1008,7 +1122,7 @@
                             <a href="https://api.whatsapp.com/send?phone=919902969240" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 80-23471956" target="_blank">
+                            <a href="tel:+91-9902969240" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
                             <a href="mailto:connect@iskconbangalore.org" target="_blank">
@@ -1069,7 +1183,7 @@
                                 <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                             </a>
                            
-                            <a href="https://www.iskconbangalore.org/" target="_blank">
+                            <a href="https://donations.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
                           
@@ -1082,7 +1196,7 @@
                         <h2>Volunteering Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Offer your talents in divine service. Explore volunteering opportunities that foster personal growth and provide spiritual fulfillment.</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
@@ -1105,7 +1219,7 @@
                         <h2>Career Opportunities</h2> <br/>
                         <p class="bordered-paragraph">Join a team dedicated to serving humanity through spiritual outreach. Explore fulfilling career paths with ISKCON Bangalore.</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
@@ -1159,13 +1273,13 @@
                         <h2>Nitya Annadana</h2> <br/>
                         <p class="bordered-paragraph">Experience Nitya Annadana, offering free, nourishing prasadam daily, uplifting hearts and fostering spiritual growth.</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=9108023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=919379156083" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 08023471956" target="_blank">
+                            <a href="tel:+91 93791 56083" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
-                            <a href="mailto:connect@iskconbangalore.org" target="_blank">
+                            <a href="mailto:donor.care@iskconbangalore.org" target="_blank">
                                 <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                             </a>
                             
@@ -1216,7 +1330,7 @@
                             <a href="https://api.whatsapp.com/send?phone=919148415511" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 80-23575333" target="_blank">
+                            <a href="tel:+91 9148415511" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
                             <a href="mailto:support@highertaste.in" target="_blank">
@@ -1254,28 +1368,29 @@
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="./assets/Images/Srila Prabhupada’s books.jpg" alt="Image 1">
+                    <img src="./assets/Images/Dakshinakriti.jpg" alt="Image 1">
                     <div class="info">
-                        <h2>Srila Prabhupada’s Books</h2> <br/>
-                        <p class="bordered-paragraph">Discover Srila Prabhupada’s timeless Vedic teachings, offering insights for overcoming anxiety and suffering. Pick one, start reading, and transform your life!</p>
+                        <h2>Dakshinakriti</h2> <br/>
+                        <p class="bordered-paragraph">Experience a world of timeless artistry and take home treasures, supporting artisans and preserving the rich traditions of India.</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 8023471956" target="_blank">
+                            <a href="tel:+91 8023372233" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
                             <a href="mailto:sales.tsfgifts@hkm-group.org" target="_blank">
                                 <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                             </a>
                             
-                            <a href="https://www.bhagavad-gita-as-it-is.org/" target="_blank">
+                            <a href="https://www.iskconbangalore.org/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
                            
                         </div>
                     </div>
                 </div>
+                
                 </div>
 
             <!-- 7th grid -->
@@ -1293,7 +1408,7 @@
                             <a href="https://api.whatsapp.com/send?phone=919342248011" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
-                            <a href="tel:+91 80-23578351" target="_blank">
+                            <a href="tel:+91 9342248011" target="_blank">
                                 <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
                             </a>
                             <a href="mailto:guest.house@hkm-group.org" target="_blank">
@@ -1337,14 +1452,37 @@
                 <div class="image-divider">
                     <img src="./assets/Images/Divider.png" alt="Image Divider">
                 </div>
-            <div class="grid-container">
+             <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./assets/Images/Srila Prabhupada’s books.jpg" alt="Image 1">
+                    <div class="info">
+                        <h2>Srila Prabhupada’s Books</h2> <br/>
+                        <p class="bordered-paragraph">Discover Srila Prabhupada’s timeless Vedic teachings, offering insights for overcoming anxiety and suffering. Pick one, start reading, and transform your life!</p>
+                        <div class="icon-links">
+                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                                <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
+                            </a>
+                            <a href="tel:080 23372233" target="_blank">
+                                <img src="./assets/Images/telephone (1).png" alt="Phone" class="icon-img">
+                            </a>
+                            <a href="mailto:sales.tsfgifts@hkm-group.org" target="_blank">
+                                <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
+                            </a>
+                            
+                            <a href="https://www.bhagavad-gita-as-it-is.org/buy" target="_blank">
+                                <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
                 <div class="grid-item">
                     <img src="./assets/Images/Daily Spiritual lectures.jpg" alt="Image 1">
                     <div class="info">
                         <h2>Daily Spiritual Lectures</h2> <br/>
                         <p class="bordered-paragraph">ISKCON Bangalore offers daily spiritual lectures that provide profound insights into the teachings of Bhagavad Gita, Srimad Bhagavatam, and other sacred texts.</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
@@ -1354,7 +1492,7 @@
                                 <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                             </a>
                            
-                            <a href="https://www.iskconbangalore.org/" target="_blank">
+                            <a href="https://www.youtube.com/@iskconbangaloresanga" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
                            
@@ -1367,7 +1505,7 @@
                         <h2>Spiritual Magazines</h2> <br/>
                         <p class="bordered-paragraph">Explore Krishna Voice and Bhaktivedanta Darshana magazines for profound spiritual teachings, inspiring articles, recipes, and engaging activities. Join today!</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
@@ -1377,20 +1515,21 @@
                                 <img src="./assets/Images/mail (2).png" alt="Email" class="icon-img">
                             </a>
                             
-                            <a href="https://www.krishnavoice.org/" target="_blank">
+                            <a href="https://www.bhagavad-gita-as-it-is.org/buy/" target="_blank">
                                 <img src="./assets/Images/chain (2).png" alt="Link" class="icon-img">
                             </a>
                            
                         </div>
                     </div>
                 </div>
-                <div class="grid-item">
+                <br/>
+                <div class="grid-item-2">
                     <img src="./assets/Images/Holy Name Distribution.jpg" alt="Image 1">
                     <div class="info">
                         <h2>Holy Name Distribution</h2> <br/>
                         <p class="bordered-paragraph">Scriptures guide us to chant the holy names, freeing the mind from vices and fostering spiritual growth. Experience our Kirtans, Harinam Mantapa, and Chanters Club!</p>
                         <div class="icon-links">
-                            <a href="https://api.whatsapp.com/send?phone=918023471956" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=916366906539" target="_blank">
                                 <img src="./assets/Images/whatsapp (1).png" alt="Link" class="icon-img">
                             </a>
                             <a href="tel:+91 8023471956" target="_blank">
@@ -1410,92 +1549,6 @@
                 </div>
             </div>
     <!-- /Image Grid -->
-</section>
-
-
- <section>
- <!-- Science -->
- <h1 style="text-align: center;font-family: 'Fredoka', sans-serif; font-size:40px;color: #35718a;text-transform: uppercase;">Scientific, Research-Backed Benefits of Our Practical Tools</h1>
- <div class="image-divider">
-    <img src="./assets/Images/Divider element.png" alt="Image Divider">
-</div>
-<br/>
- <div class="grid-con">
-    <div class="grid-i">
-        <img src="./assets/Images/Stress & Anxiety Reduction.png" alt="Image 1" class="circle-img">
-        <p>Stress and Anxiety Reduction</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/cognitive.png" alt="Image 2" class="circle-img">
-        <p>Enhanced Cognitive Function</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/emotional.png" alt="Image 3" class="circle-img">
-        <p>Emotional Balance</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/positivity.png" alt="Image 4" class="circle-img">
-        <p>Improved Mood and Positivity</p>
-    </div>
-</div>
-<div class="grid-con">
-    <div class="grid-i">
-        <img src="./assets/Images/self-awareness.png" alt="Image 1" class="circle-img">
-        <p>Increased Self-Awareness</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/Better Physical Health.png" alt="Image 2" class="circle-img">
-        <p>Better Physical Health</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/exercise.png" alt="Image 3" class="circle-img">
-        <p>Deeper Relaxation</p>
-    </div>
-    <div class="grid-i">
-        <img src="./assets/Images/Heightened Spiritual Connection.png" alt="Image 4" class="circle-img">
-        <p>Heightened Spiritual Connection</p>
-    </div>
-</div>
-
-
-<style>
-    .grid-con {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
-        gap: 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    
-    .grid-i {
-        text-align: center;
-    }
-    
-    .circle-img {
-        width: 150px; /* Set your desired size */
-        height: 150px;
-        object-fit: cover;
-    }
-    
-   .grid-i  p {
-        margin-top: 10px;
-        font-size: 15px;
-        color: rgba(6, 27, 65, 0.922);
-        font-family: 'Montserrat',sans-serif;
-        font-weight: bold;
-    }
-    
-    /* Media query for mobile screens (e.g., less than 768px wide) */
-    @media (max-width: 768px) {
-        .grid-con {
-            grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-            padding: 0px;
-        }
-
-    }
-</style>
-
- <!-- /Science -->
 </section>
 
 
