@@ -1791,63 +1791,83 @@
                     </div>
                     
                     <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑</button>
-<style>
-    #backToTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #35718a;
-        color: white;
-        border: none;
-        border-radius: 60px;
-        padding: 15px;
-        cursor: pointer;
-        font-size: 18px;
-        z-index: 9999;
-        opacity: 0; /* Initially hidden */
-        visibility: hidden; /* Initially hidden */
-        transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
-    }
-    #backToTopBtn:hover {
-        background-color: #357183;
-    }
-</style>
-<script>
-    let mybutton = document.getElementById("backToTopBtn");
-    let videoCon = document.getElementById("video-con");
 
-    // When the user scrolls down 100px from the top of the document, show the button
-    window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            if (!videoCon.matches(':hover')) {  // Check if cursor is not over #video-con
-                mybutton.style.opacity = "1";
-                mybutton.style.visibility = "visible";
-            }
-        } else {
-            mybutton.style.opacity = "0";
-            mybutton.style.visibility = "hidden";
-        }
-    };
-
-    // When the user clicks the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-
-    // Add event listeners to hide the button when mouse is over #video-con
-    videoCon.addEventListener('mouseenter', function() {
-        mybutton.style.opacity = "0";
-        mybutton.style.visibility = "hidden";
-    });
-
-    videoCon.addEventListener('mouseleave', function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            mybutton.style.opacity = "1";
-            mybutton.style.visibility = "visible";
-        }
-    });
-</script>
+                    <!-- Add this to make it responsive on mobile -->
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    
+                    <style>
+                        #backToTopBtn {
+                            position: fixed;
+                            bottom: 20px;
+                            right: 20px;
+                            background-color: #35718a;
+                            color: white;
+                            border: none;
+                            border-radius: 60px;
+                            padding: 15px;
+                            cursor: pointer;
+                            font-size: 18px;
+                            z-index: 9999;
+                            opacity: 0; /* Initially hidden */
+                            visibility: hidden; /* Initially hidden */
+                            transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+                        }
+                    
+                        #backToTopBtn:hover {
+                            background-color: #357183;
+                        }
+                    </style>
+                    
+                    <script>
+                        let mybutton = document.getElementById("backToTopBtn");
+                        let videoCon = document.getElementById("video-con");
+                    
+                        // When the user scrolls down 100px from the top of the document, show the button
+                        window.onscroll = function() {
+                            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                                if (!videoCon.matches(':hover')) {  // Check if cursor is not over #video-con
+                                    mybutton.style.opacity = "1";
+                                    mybutton.style.visibility = "visible";
+                                }
+                            } else {
+                                mybutton.style.opacity = "0";
+                                mybutton.style.visibility = "hidden";
+                            }
+                        };
+                    
+                        // When the user clicks the button, scroll to the top of the document
+                        function topFunction() {
+                            document.body.scrollTop = 0;
+                            document.documentElement.scrollTop = 0;
+                        }
+                    
+                        // Add event listeners to hide the button when mouse is over #video-con (for desktop)
+                        videoCon.addEventListener('mouseenter', function() {
+                            mybutton.style.opacity = "0";
+                            mybutton.style.visibility = "hidden";
+                        });
+                    
+                        videoCon.addEventListener('mouseleave', function() {
+                            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                                mybutton.style.opacity = "1";
+                                mybutton.style.visibility = "visible";
+                            }
+                        });
+                    
+                        // Add touch event listeners for mobile devices to hide the button when touching over #video-con
+                        videoCon.addEventListener('touchstart', function() {
+                            mybutton.style.opacity = "0";
+                            mybutton.style.visibility = "hidden";
+                        });
+                    
+                        videoCon.addEventListener('touchend', function() {
+                            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                                mybutton.style.opacity = "1";
+                                mybutton.style.visibility = "visible";
+                            }
+                        });
+                    </script>
+                    
 
                    
                 </div>
